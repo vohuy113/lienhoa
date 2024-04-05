@@ -6,7 +6,7 @@ import FooterHeadquarter from "./FooterHeadquarter";
 
 const Footer = () => {
   return (
-    <div className="bg-black px-20 pt-20">
+    <div className="bg-black px-20 pt-20 w-full">
       <div className="flex justify-between mb-[60px]">
         <FooterLogo />
         <FooterPage />
