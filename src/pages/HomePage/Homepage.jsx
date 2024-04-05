@@ -10,7 +10,7 @@ import SectionContact from "./SectionContact";
 import SectionWellcome from "./SectionWellcome";
 const Homepage = () => {
   return (
-    <div>
+    <div className="w-full">
       <SectionWellcome />
       <SectionMission />
       <SectioneGoal />
