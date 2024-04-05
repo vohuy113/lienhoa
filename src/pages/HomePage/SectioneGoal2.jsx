@@ -9,7 +9,7 @@ const SectioneGoal2 = () => {
         <img className="h-full" src={goal_img1} />
       </div>
       <div className="bg-black  text-white flex flex-col gap-6 pb-6 pt-6 px-4 lg:px-6">
-        <h1 className="text-[30px] uppercase font-semibold leading-tight ">
+        <h1 className="text-[24px] lg:text-[30px] uppercase font-semibold leading-tight ">
           ĐÔI NÉT VỀ GOLF HUẾ CLUB
         </h1>
         <p className="text-[16px] text-justify">
