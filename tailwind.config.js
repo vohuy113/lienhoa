@@ -3,9 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundColor: {},
+      backgroundColor: {
+        primary: "#00B125",
+      },
       backgroundImage: {},
-      colors: {},
+      colors: {
+        primary: "#00B125",
+      },
       fontFamily: {
         poppins: ["Poppins"],
       },

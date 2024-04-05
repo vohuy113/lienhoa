@@ -5,9 +5,11 @@ import { path } from "./routers/Path";
 import Home from "./pages/Home/Home";
 function App() {
   return (
-    <Routes>
-      <Route path={path.HOME} element={<Home />}></Route>
-    </Routes>
+    <div className="w-full">
+      <Routes>
+        <Route path={path.HOME} element={<Home />}></Route>
+      </Routes>
+    </div>
   );
 }
 
