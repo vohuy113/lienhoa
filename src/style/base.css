@@ -1,23 +1,29 @@
 @font-face {
   font-family: SVN-Poppins;
+  src: url("../../font/SVN-Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SVN-Poppins;
+  src: url("../../font/SVN-Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SVN-Poppins;
   src: url("../../font/SVN-Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: SVN-Poppins;
-  src: url("../../font/SVN-Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px !important;
+  font-family: "Yeseva One";
+  src: url("../../font/YesevaOne-Regular.ttf") format("truetype");
 }
-@font-face {
-  font-family: SVN-Poppins;
-  src: url("../..font/SVN-Poppins-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-size: 14px !important;
-}
+
 :root {
-  font-family: SVN-Poppins !important;
+  font-family: SVN-Poppins, sans-serif !important;
 }
