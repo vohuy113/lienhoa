@@ -1,0 +1,25 @@
+.carousel .control-dots .dot {
+  background: #b5b5b5 !important;
+}
+.carousel .control-dots .dot.selected {
+  background: green !important;
+}
+.carousel .control-dots {
+  width: max-content !important;
+  left: 64px !important;
+  bottom: 60px !important;
+}
+.carousel .control-dots .dot:first-child {
+  margin-left: unset !important;
+}
+.carousel.carousel-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .slider-wrapper {
+  height: 100%;
+}
+.carousel .slider-wrapper.axis-horizontal .slider {
+  height: 100%;
+}
