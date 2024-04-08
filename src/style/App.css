@@ -48,3 +48,16 @@ img {
   background-size: cover;
   background-position: center;
 }
+.background-section-goal {
+  background-image: url("../assets/SectioneGoal2/egoal-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+}

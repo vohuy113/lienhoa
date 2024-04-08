@@ -7,7 +7,7 @@ function SectionMission() {
   return (
     <div
       className="w-full h-full  min-h-screen  grid grid-cols-1 lg:grid-cols-2 pt-[100px] pb-[50px]"
-      id="about"
+      id="mission"
     >
       <div className="flex flex-col  flex-1   gap-6 h-full">
         <div className="text-center lg:text-left lg:pr-10 pl-4 pr-4  lg:pl-20">
@@ -33,7 +33,7 @@ function SectionMission() {
           <CardAbout first={"30+"} second={"Sự kiện tham gia"} />
         </div>
       </div>
-      <div className="mt-6 lg:mt-0 flex items-center justify-center pl-[50px]">
+      <div className="mt-6 lg:mt-0 flex lg:items-start items-center justify-center pl-[50px]">
         <img className="w-full h-auto" src={about_img}></img>
       </div>
     </div>

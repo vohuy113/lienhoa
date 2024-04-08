@@ -2,13 +2,12 @@ import React from "react";
 import courses_img from "../../assets/SectioneGoal/ss-course-img1.png";
 import courses_img2 from "../../assets/SectioneGoal/ss-course-img2.png";
 import courses_svg from "../../assets/SectioneGoal/sourse-icon.svg";
-
 import Title from "../../components/Title";
 import GoalItem from "../../components/GoalItem";
 const SectioneGoal = () => {
   return (
     <div
-      id="courses"
+      id="goal"
       className="w-full h-full min-h-screen py-8 lg:py-[50px] grid grid-cols-1 gap-0 lg:gap-10 lg:grid-cols-2 bg-[#F3F3F3] px-4 lg:px-8 xl:px-[80px] "
     >
       <div className="relative">
