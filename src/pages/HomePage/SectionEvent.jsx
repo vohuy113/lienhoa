@@ -5,6 +5,7 @@ import { getEvent } from "../../services/event";
 import IMG from "../../assets/Homepage/SectionWellcome/clear.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { useTranslation } from "react-i18next";
 const SectionEvent = () => {
   var settings = {
     dots: true,
@@ -27,6 +28,8 @@ const SectionEvent = () => {
     };
     fetchData();
   }, []);
+  const { t } = useTranslation();
+
   console.log(data);
   return (
     <div className="w-full flex max-h-[632px] xl:h-[632px] py-[50px]">
@@ -70,7 +73,7 @@ const SectionEvent = () => {
           data.map((item) => (
             <div className="flex w-full h-full">
               <CardEvent
-                title={item?.title.rendered}
+                title={t(item?.title.rendered)}
                 desc={
                   "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ..."
                 }

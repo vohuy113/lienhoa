@@ -1,0 +1,5 @@
+{
+  "welcome_message": "Welcome to Hue Golf Club",
+  "hello": "Hello",
+  "key": "{{item.title.rendered}}"
+}

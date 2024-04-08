@@ -7,8 +7,9 @@ import laguna_ic from "../../assets/Homepage/SectionWellcome/laguna.png";
 import taylor_ic from "../../assets/Homepage/SectionWellcome/taylormade.png";
 import titleist_ic from "../../assets/Homepage/SectionWellcome/titleist.png";
 import { Weather } from "../../components/Weather";
-
+import { useTranslation } from "react-i18next";
 const SectionWellcome = () => {
+  const { t } = useTranslation();
   return (
     <div className="w-full h-auto flex flex-col justify-between background-section">
       <div className="flex-grow w-full h-full flex flex-col items-start justify-between lg:gap-[120px] py-10 px-20">
@@ -17,7 +18,8 @@ const SectionWellcome = () => {
         </div>
         <div className="text-white w-max text-start">
           <h1 className="lg:text-[64px] lg:font-normal lg:w-[741px] yeseva-font">
-            Chào mừng bạn đến với Huế Golf Club
+            {/* Chào mừng bạn đến với Huế Golf Club */}
+            {t("welcome_message")}
           </h1>
           <h2 className="lg:text-lg lg:mb-10 lg:mt-2">
             Nâng tầm trình đô, Nắm bắt đam mê
