@@ -1,6 +1,6 @@
 import React from "react";
 
-const CourseItem = ({ icon, content }) => {
+const GoalItem = ({ icon, content }) => {
   return (
     <div className="flex items-center justify-start">
       <img src={icon} />
@@ -9,4 +9,4 @@ const CourseItem = ({ icon, content }) => {
   );
 };
 
-export default CourseItem;
+export default GoalItem;
