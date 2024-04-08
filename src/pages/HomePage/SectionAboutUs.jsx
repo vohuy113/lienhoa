@@ -1,43 +1,42 @@
 import React from "react";
-import about_img from "../../assets/SectionAbout/ss-about-img.png";
-import Btn from "../../components/Btn";
-import CardAbout from "../../components/CardAbout";
-import Title from "../../components/Title";
-function SectionAboutUs() {
+import goal_img1 from "../../assets/SectionAboutUs/ss-goal2.png";
+import goal_img2 from "../../assets/SectionAboutUs/ss-goal2-1.png";
+
+const SectionAboutUs = () => {
   return (
-    <div
-      className="grid grid-cols-1 lg:grid-cols-2 pt-[100px] pb-[50px]"
-      id="about"
-    >
-      <div className="flex flex-col  flex-1   gap-6 h-full">
-        <div className="text-center lg:text-left lg:pr-10 pl-4 pr-4  lg:pl-20">
-          <Btn
-            bgColor={"bg-black"}
-            content={"Về chúng tôi"}
-            textColor={"text-white"}
-            style={"px-6 lg:py-2 py-4 text-[18px] uppercase leading-tight 	"}
-          />
-          <Title content={"Sứ mệnh Huế Golf Club"} />
-        </div>
-        <p className="text-justify leading-7 text-[16px] lg:pr-[50px] pl-4 pr-4  lg:pl-20">
-          Tại Huế Golf Club, chúng tôi cam kết tạo ra một môi trường golf chuyên
-          nghiệp, hòa mình vào văn hóa địa phương và phát triển bền vững trong
-          cộng đồng golf Việt Nam. Chúng tôi không chỉ là nơi để tập luyện và
-          thi đấu, mà còn là một điểm đến để thắp sáng niềm đam mê golf, kết nối
-          cộng đồng và tạo ra những kỷ niệm không thể nào quên.
-        </p>
-        <div className="grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-4 lg:pl-20 gap-3  lg:gap-6 px-4 lg:px-0">
-          <CardAbout first={"100+"} second={"Học viên"} />
-          <CardAbout first={"10+"} second={"Năm hoạt động"} />
-          <CardAbout first={"20+"} second={"Đối tác"} />
-          <CardAbout first={"30+"} second={"Sự kiện tham gia"} />
-        </div>
+    <div className="w-full h-full  min-h-screen py-8 lg:py-[50px] lg:px-20 md:px-8 gap-[10px] px-4 grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-1">
+      <div className="">
+        <img className="w-full h-full" src={goal_img1} />
       </div>
-      <div className="mt-6 lg:mt-0 flex items-center pl-[50px]">
-        <img className="xl:h-full" src={about_img}></img>
+      <div className="bg-black  text-white flex flex-col gap-6 pb-6 pt-6 px-4 lg:px-6">
+        <h1 className="text-[24px] lg:text-[30px] uppercase font-semibold leading-tight ">
+          ĐÔI NÉT VỀ GOLF HUẾ CLUB
+        </h1>
+        <p className="text-[16px] text-justify">
+          Golf Huế Club không chỉ là nơi để thể hiện kỹ năng golf mà còn là một
+          môi trường thú vị để các golfer chia sẻ kiến thức và kinh nghiệm. Từ
+          các buổi tập huấn định kỳ đến các hội thảo và workshop, các thành viên
+          của câu lạc bộ có cơ hội học hỏi từ nhau và phát triển kỹ năng của
+          mình.
+        </p>
+        <p className="text-[16px] text-justify">
+          Điểm đến lý tưởng: Golf Huế Club là điểm đến cho bất kỳ ai đam mê golf
+          và mong muốn trải nghiệm sự kết hợp giữa thể thao và thiên nhiên Với
+          không gian xanh mát, dịch vụ chuyên nghiệp và cộng đồng golf đa dạng,
+          câu lạc bộ này đang trở thành điểm đến hàng đầu cho các golfer tại Huế
+        </p>
+        <p className="text-[16px] text-justify">
+          Cộng đồng golf đa dạng: Golf Huế Club hân hạnh chào đón các golfer từ
+          mọi lứa tuổi và trình độ. Từ những người mới bắt đầu đến những golfer
+          chuyên nghiệp, mọi người đều có cơ hội kết nối và chia sẻ niềm đam mê
+          với nhau tại địa điểm này.
+        </p>
+      </div>
+      <div className="col-span-1 md:col-auto">
+        <img className="w-full h-full" src={goal_img2} />
       </div>
     </div>
   );
-}
+};
 
 export default SectionAboutUs;
