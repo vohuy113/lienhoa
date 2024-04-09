@@ -21,7 +21,7 @@ const SectioneGoal2 = () => {
             bạn phát triển và tự tin hơn trong mỗi cú đánh trên sân golf.
           </p>
         </div>
-        <div className="pt-6 lg:pt-16 pb-[56px] flex flex-row">
+        <div className="pt-6 lg:pt-16 pb-[56px] block lg:flex lg:flex-row">
           <div className=" basis-2/5">
             <p className="px-4 lg:px-[80px] text-[16px] mb-6 text-justify">
               Huế Golf Club cung cấp một loạt các tiện ích đẳng cấp, bao gồm sân
@@ -58,7 +58,7 @@ const SectioneGoal2 = () => {
               </div>
             </div>
           </div>
-          <div className="basis-3/5 flex flex-row-reverse gap-[60px] ml-32 ">
+          <div className="block basis-3/5 lg:flex lg:flex-row-reverse gap-[60px] ml-0 lg:ml-32 ">
             <img
               className="w-full min-w-[184px] object-cover h-auto min-h-[259px]"
               src={goal2_img3}
