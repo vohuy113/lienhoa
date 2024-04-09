@@ -12,13 +12,12 @@ const SectionWellcome = () => {
   const { t } = useTranslation();
   return (
     <div className="w-full relative flex -z-20 flex-col justify-between lg:h-auto h-screen background-section">
-      {/* <div class="bg-gradient-to-r from-gray-900 to-gray-700 mix-blend-multiply"></div> */}
       <div class="absolute -z-10 inset-0 lg:bg-gradient-to-r lg:from-black lg:to-transparent bg-black opacity-[0.25] lg:opacity-0  mix-blend-multiply"></div>
       <div className="flex-grow mt-[84px] w-full h-full  flex flex-col items-center md:items-start justify-between lg:gap-[120px] gap-16 md:gap-10 lg:py-10 py-6 xl:px-20 md:px-8 px-4">
         <div className="text-white">
           <Weather />
         </div>
-        <div className="text-white mb-60 lg:mb-0 w-max text-start">
+        <div className="text-white lg:mb-0 w-full text-start">
           <h1 className="lg:text-[64px] text-3xl leading-none lg:font-normal lg:w-[741px] yeseva-font">
             {t("wellcome.welcome_message")}
           </h1>

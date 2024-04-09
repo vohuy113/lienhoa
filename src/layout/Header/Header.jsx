@@ -6,10 +6,12 @@ import Search from "./Search";
 import FlagLang from "./FlagLang";
 import Menu from "./Menu";
 import DrawerMobile from "./DrawerMobile";
-
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [headerVisible, setHeaderVisible] = useState(true);
+
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
@@ -20,6 +22,25 @@ const Header = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        console.log("Scrolled up");
+        setHeaderVisible(true);
+      } else {
+        setHeaderVisible(false);
+        console.log("Scrolled down");
+      }
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   const handleMenuToggle = () => {
     setShowMenu((prevState) => !prevState);
     if (!showMenu) {
@@ -33,7 +54,13 @@ const Header = () => {
     document.body.style.overflow = "";
   };
   return (
-    <div className="fixed z-20 bg-white shadow-lg w-full flex justify-between items-center py-[19px] lg:px-20 px-4">
+    <div
+      className={`z-20 fixed ${
+        headerVisible
+          ? "transition-transform duration-300 ease-in transform translate-y-0"
+          : "ttransition-transform duration-300 ease-out transform -translate-y-full"
+      } bg-white shadow-lg w-full flex justify-between items-center py-[19px] lg:px-20 px-4`}
+    >
       <Logo />
       <Navbar />
       <div className="flex gap-6 items-center">

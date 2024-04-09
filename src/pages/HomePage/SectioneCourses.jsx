@@ -10,7 +10,10 @@ import user_img from "../../assets/SectionCourses/avatar.png";
 import CourseItem from "../../components/CourseItem";
 const SectioneCourses = () => {
   return (
-    <div className="w-full h-full  min-h-screen py-8 lg:py-[50px] lg:px-20 md:px-8 gap-[10px] px-4">
+    <div
+      id="training"
+      className="w-full h-full  min-h-screen py-8 lg:py-[50px] lg:px-20 md:px-8 gap-[10px] px-4"
+    >
       <h1 className="text-center mt-6 font-semibold uppercase text-[28px] lg:text-[40px] leading-tight">
         Khoá học & chương trình đào tạo
       </h1>

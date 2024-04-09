@@ -11,7 +11,6 @@ const FlagLang = () => {
   };
   const [language, setLanguage] = useState("en");
   const [isShowLang, setIsShowLang] = useState(false);
-  console.log(isShowLang);
   return (
     <div className="relative">
       <div

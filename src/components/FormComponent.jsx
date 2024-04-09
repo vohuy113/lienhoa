@@ -1,9 +1,16 @@
 import React, { useState } from "react";
-
-const FormComponent = () => {
+import user_ic from "../assets/SectionContact/user.svg";
+import email_ic from "../assets/SectionContact/sms.svg";
+import call_ic from "../assets/SectionContact/call-calling.svg";
+import message_ic from "../assets/SectionContact/message.svg";
+import { saveDataFromForm } from "../services/handleForm";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const FormComponent = ({ title, subTitle }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone_number: "",
     message: "",
   });
 
@@ -14,23 +21,37 @@ const FormComponent = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData);
-    setFormData({ name: "", email: "", message: "" });
+    saveDataFromForm(formData);
+    toast.success("🦄 Wow so easy!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+    setFormData({ name: "", phone_number: "", email: "", message: "" });
   };
 
   return (
     <div className="border border-black p-[50px] mb-6 max-w-2xl w-full h-max mx-auto">
       <h1 className="uppercase lg:text-[40px] lg:leading-[62px] font-semibold ">
-        Liên hệ
+        {title}
       </h1>
-      <h2 className="">
-        Đăng ký nhận thông tin về ưu đãi, sản phẩm mới và khuyến mãi
-      </h2>
-      <form className="w-full h-full" onSubmit={handleSubmit}>
-        <div className="w-full py-3  border-b border-black">
-          {/* <label htmlFor="name">Name:</label> */}
+      <h2 className="">{subTitle}</h2>
+      <ToastContainer />
+      <form
+        className="w-full h-full flex flex-col gap-6 mt-10"
+        onSubmit={handleSubmit}
+      >
+        <div className="w-full py-3 flex gap-[10px] items-center border-b border-black">
+          <span>
+            <img src={user_ic} alt="User" />
+          </span>
           <input
-            className="w-full"
+            className="w-full focus-visible:outline-none"
             type="text"
             id="name"
             name="name"
@@ -39,10 +60,12 @@ const FormComponent = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="w-full py-3 border-b border-black">
-          {/* <label htmlFor="email">Email:</label> */}
+        <div className="w-full py-3 flex gap-[10px] items-center border-b border-black">
+          <span>
+            <img src={email_ic} alt="Email" />
+          </span>
           <input
-            className="w-full "
+            className="w-full focus-visible:outline-none "
             type="email"
             id="email"
             name="email"
@@ -51,22 +74,26 @@ const FormComponent = () => {
             placeholder="Email"
           />
         </div>
-        <div className="w-full py-3 border-b border-black">
-          {/* <label htmlFor="email">Email:</label> */}
+        <div className="w-full py-3 flex gap-[10px] items-center border-b border-black">
+          <span>
+            <img src={call_ic} alt="Phone number" />
+          </span>
           <input
-            className="w-full"
+            className="w-full focus-visible:outline-none"
             type="tel"
             id="phone_number"
             name="phone_number"
-            value={formData.email}
+            value={formData.phone_number}
             onChange={handleChange}
             placeholder="Số điện thoại"
           />
         </div>
-        <div className="w-full py-3  border-b border-black">
-          {/* <label htmlFor="message">Message:</label> */}
+        <div className="w-full py-3 flex gap-[10px] items-center border-b border-black">
+          <span>
+            <img src={message_ic} alt="Message" />
+          </span>
           <input
-            className="w-full"
+            className="w-full focus-visible:outline-none"
             id="message"
             name="message"
             value={formData.message}
@@ -75,7 +102,7 @@ const FormComponent = () => {
           />
         </div>
         <button
-          className="lg:py-3 lg:px-[60px] text-white bg-primary mt-6"
+          className="lg:py-3 lg:px-[60px] py-2 px-12 text-white bg-primary"
           type="submit"
         >
           Submit

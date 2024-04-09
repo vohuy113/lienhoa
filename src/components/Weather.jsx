@@ -61,7 +61,7 @@ export const Weather = () => {
   console.log(weatherData);
   return (
     <div className="flex items-center justify-between flex-col md:flex-row mt-12 md:mt-0">
-      <div>
+      <div className="flex flex-col items-center justify-center">
         <div className="relative w-max">
           <h1 className="lg:text-[32px] text-xl font-bold lg:leading-[50px] w-max">
             {weatherData?.main.temp.toFixed(2) || 25}
