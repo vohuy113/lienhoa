@@ -4,7 +4,10 @@ import goal_img2 from "../../assets/SectionAboutUs/ss-goal2-1.png";
 
 const SectionAboutUs = () => {
   return (
-    <div className="w-full h-full  min-h-screen py-8 lg:py-[50px] lg:px-20 md:px-8 gap-[10px] px-4 grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-1">
+    <div
+      id="about-us"
+      className="w-full h-full  min-h-screen py-8 lg:py-[50px] lg:px-20 md:px-8 gap-[10px] px-4 grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-1"
+    >
       <div className="">
         <img className="w-full h-full" src={goal_img1} />
       </div>
