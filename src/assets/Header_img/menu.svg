@@ -1,0 +1,26 @@
+ <svg
+          class="mb-menu-btn"
+          width="24"
+          height="24"
+          viewBox="0 0 18 14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1H17"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M6 7L17 7"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M1 13L17 13"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>

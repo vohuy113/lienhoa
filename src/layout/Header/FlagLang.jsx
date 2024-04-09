@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import flag_vi from "../../assets/Header_img/icon_vi.png";
 import flag_en from "../../assets/Header_img/icon_en.png";
 import arrow_ic from "../../assets/Header_img/arrow-down.svg";
+import i18n from "../../services/i18n.jsx";
 const FlagLang = () => {
   const handleChooseLang = (lang) => {
+    i18n.changeLanguage(lang);
     setLanguage(lang);
     setIsShowLang(false);
   };

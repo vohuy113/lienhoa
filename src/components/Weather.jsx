@@ -60,15 +60,17 @@ export const Weather = () => {
   }, [weatherData]);
   console.log(weatherData);
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between flex-col md:flex-row mt-12 md:mt-0">
       <div>
         <div className="relative w-max">
-          <h1 className="text-[32px] font-bold leading-[50px] w-max">
+          <h1 className="lg:text-[32px] text-xl font-bold lg:leading-[50px] w-max">
             {weatherData?.main.temp.toFixed(2) || 25}
           </h1>
           <span className="absolute top-0 right-[-20px]">°C</span>
         </div>
-        <h2>{weatherData?.weather[0].description || "Nhiều mấy"}</h2>
+        <h2 className="lg:text-base text-sm">
+          {weatherData?.weather[0].description || "Nhiều mấy"}
+        </h2>
       </div>
       <img src={icon || clear} className="w-20 h-auto" />
       <div className="flex flex-col items-start">

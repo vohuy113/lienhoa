@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import CountdownTimer from "./CountdownTimer";
 import { data } from "autoprefixer";
+import { useTranslation } from "react-i18next";
+import i18n from "../services/i18n";
 const CardEvent = ({ title, desc, timeEvent }) => {
   const eventTime = new Date("2024-04-10T10:30:00");
   const truncateText = (text, maxLines) => {
@@ -10,9 +12,11 @@ const CardEvent = ({ title, desc, timeEvent }) => {
     }
     return text;
   };
+  const { t } = useTranslation();
+
   console.log(truncateText(title, 2));
   return (
-    <div className="pb-[111px] bg-black flex-1 pt-14 pl-16 h-full flex flex-col justify-between items-start">
+    <div className="pb-[111px] bg-black flex-1 pt-14 xl:pl-16 pl-4 h-full flex flex-col justify-between items-start">
       <h1 className="text-green-600 text-base">Su kien</h1>
       <h1 className="text-[32px] text-start text-white font-semibold leading-[50px] line-clamp-2">
         {truncateText(title, 2)}

@@ -46,7 +46,8 @@ img {
 .background-section {
   background-image: url("../assets/Homepage/SectionWellcome/bg-wellcome.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
+  
 }
 .background-section-goal {
   background-image: url("../assets/SectioneGoal2/egoal-bg.png");
