@@ -32,7 +32,10 @@ const SectionEvent = () => {
 
   console.log(data);
   return (
-    <div className="w-full flex max-h-[632px] xl:h-[632px] xl:py-[50px] py-4">
+    <div
+      id="event"
+      className="w-full flex max-h-[632px] xl:h-[632px] xl:py-[50px] py-4"
+    >
       <ImgEvent
         img={IMG}
         // img={item?._embedded["wp:featuredmedia"]?.["0"]?.source_url}
