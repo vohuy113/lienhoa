@@ -1,4 +1,16 @@
 {
-  "welcome_message": "Chào mừng bạn đến với Huế Golf Club",
-  "hello": "Xin chào"
+  "header": {
+    "home": "Trang chủ",
+    "introduce": "Giới thiệu",
+    "training": "Đào tạo",
+    "ground": "Sân tập",
+    "event": "Sự kiện",
+    "news": "Tin tức",
+    "contact": "Liên hệ"
+  },
+  "wellcome": {
+    "welcome_message": "Chào mừng bạn đến với Huế Golf Club",
+    "slogan": "Nâng tầm trình độ, kết nối đam mê",
+    "contact": "Liên hệ chúng tôi"
+  }
 }

@@ -16,10 +16,10 @@ const CardEvent = ({ title, desc, timeEvent }) => {
 
   console.log(truncateText(title, 2));
   return (
-    <div className="pb-[111px] bg-black flex-1 pt-14 pl-16 h-full flex flex-col justify-between items-start">
+    <div className="pb-[111px] bg-black flex-1 pt-14 xl:pl-16 pl-4 h-full flex flex-col justify-between items-start">
       <h1 className="text-green-600 text-base">Su kien</h1>
       <h1 className="text-[32px] text-start text-white font-semibold leading-[50px] line-clamp-2">
-        {i18n.t("key", { title })}
+        {truncateText(title, 2)}
       </h1>
       <h2 className="text-xl text-start text-white line-clamp-3">
         {truncateText(desc, 3)}

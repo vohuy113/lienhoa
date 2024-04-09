@@ -46,5 +46,6 @@ img {
 .background-section {
   background-image: url("../assets/Homepage/SectionWellcome/bg-wellcome.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
+  
 }

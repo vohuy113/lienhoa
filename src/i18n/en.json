@@ -1,5 +1,16 @@
 {
-  "welcome_message": "Welcome to Hue Golf Club",
-  "hello": "Hello",
-  "key": "{{item.title.rendered}}"
+  "header": {
+    "home": "Home",
+    "introduce": "About Us",
+    "training": "Training",
+    "ground": "Ground",
+    "event": "Event",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "wellcome": {
+    "welcome_message": "Welcome to Hue Golf Club",
+    "slogan": "Elevate your skills, pursue your passions",
+    "contact": "Contact"
+  }
 }

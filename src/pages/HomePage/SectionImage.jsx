@@ -9,21 +9,31 @@ import img6 from "../../assets/SectionVideoImage/Rectangle6.png";
 
 const SectionImage = () => {
   return (
-    <div className=" flex flex-col items-center gap-4 w-full ">
+    <div className=" flex flex-col items-center gap-4 w-full p-4 xl:p-20">
       <h1 className="uppercase">Hình ảnh & Video</h1>
       <ToggleSwitch label=" " />
-      <div className="w-full">
-        <div className="flex w-full">
-          <img src={img1} alt="image 1" />
-          <div className="flex flex-col">
-            <img src={img2} alt="image 2" className="w-full" />
-            <img src={img3} alt="image 3" className="w-full" />
+      <div className="w-full flex flex-col lg:gap-6 md:gap-4 gap-3">
+        <div className="flex flex-col md:flex-row w-full lg:gap-6 md:gap-4 gap-3">
+          <img src={img1} alt="image 1" className="flex-1" />
+          <div className="flex md:flex-col w-full md:w-[calc(100%/3-16px)] lg:gap-6 md:gap-4 gap-3">
+            <div className="w-1/2 md:w-full">
+              <img src={img2} alt="image 2" className="w-full" />
+            </div>
+            <div className="w-1/2 md:w-full">
+              <img src={img3} alt="image 3" className="w-full" />
+            </div>
           </div>
         </div>
-        <div className="flex w-full">
-          <img src={img4} alt="Image4" />
-          <img src={img5} alt="Image5" />
-          <img src={img6} alt="Image6" />
+        <div className="flex w-full lg:gap-6 md:gap-4 gap-3">
+          <div className="w-1/3">
+            <img className="w-full" src={img4} alt="Image4" />
+          </div>
+          <div className="w-1/3">
+            <img className="w-full" src={img5} alt="Image5" />
+          </div>
+          <div className="w-1/3">
+            <img className="w-full" src={img6} alt="Image6" />
+          </div>
         </div>
       </div>
     </div>

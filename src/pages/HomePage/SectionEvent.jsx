@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import CardEvent from "../../components/CardEvent";
 import ImgEvent from "../../components/ImgEvent";
 import { getEvent } from "../../services/event";
-import IMG from "../../assets/Homepage/SectionWellcome/clear.png";
+import IMG from "../../assets/ImageEvent.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { useTranslation } from "react-i18next";
@@ -32,56 +32,33 @@ const SectionEvent = () => {
 
   console.log(data);
   return (
-    <div className="w-full flex max-h-[632px] xl:h-[632px] py-[50px]">
+    <div className="w-full flex max-h-[632px] xl:h-[632px] xl:py-[50px] py-4">
       <ImgEvent
         img={IMG}
         // img={item?._embedded["wp:featuredmedia"]?.["0"]?.source_url}
       />
-      <Carousel
-        autoPlay
-        infiniteLoop
-        showArrows={false}
-        showThumbs={false}
-        className="w-1/2 h-full"
-        // showArrows={false}
-        // renderIndicator={(onClickHandler, isSelected, index, label) => {
-        //   const defStyle = {
-        //     color: "white",
-        //     cursor: "pointer",
-        //   };
-
-        //   const style = isSelected
-        //     ? { ...defStyle, color: "green" }
-        //     : { ...defStyle };
-        //   return (
-        //     <span
-        //       style={style}
-        //       onClick={onClickHandler}
-        //       onKeyDown={onClickHandler}
-        //       value={index}
-        //       key={index}
-        //       role="button"
-        //       tabIndex={0}
-        //       aria-label={`${label} ${index + 1}`}
-        //     >
-        //       {"dots" + index}
-        //     </span>
-        //   );
-        // }}
-      >
-        {data &&
-          data.map((item) => (
-            <div className="flex w-full h-full">
-              <CardEvent
-                title={t(item?.title.rendered)}
-                desc={
-                  "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ..."
-                }
-                timeEvent={item?.acf.time}
-              />
-            </div>
-          ))}
-      </Carousel>
+      {!!data.length && (
+        <Carousel
+          autoPlay
+          infiniteLoop
+          showArrows={false}
+          showThumbs={false}
+          className="w-full lg:w-1/2 h-full"
+        >
+          {data &&
+            data.map((item) => (
+              <div className="flex w-full h-full">
+                <CardEvent
+                  title={item?.title.rendered}
+                  desc={
+                    "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ..."
+                  }
+                  timeEvent={item?.acf.time}
+                />
+              </div>
+            ))}
+        </Carousel>
+      )}
     </div>
   );
 };
