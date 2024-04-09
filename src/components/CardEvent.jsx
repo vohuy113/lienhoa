@@ -16,8 +16,13 @@ const CardEvent = ({ title, desc, timeEvent }) => {
 
   console.log(truncateText(title, 2));
   return (
-    <div className="pb-[111px] bg-black flex-1 pt-14 xl:pl-16 pl-4 h-full flex flex-col justify-between items-start">
-      <h1 className="text-green-600 text-base">Su kien</h1>
+    <div
+      id="event"
+      className="pb-[111px] bg-black flex-1 pt-14 xl:pl-16 pl-4 h-full flex flex-col justify-between items-start"
+    >
+      <h1 className="text-green-600 text-[16px] text-base uppercase">
+        {t("event.event")}
+      </h1>
       <h1 className="text-[32px] text-start text-white font-semibold leading-[50px] line-clamp-2">
         {truncateText(title, 2)}
       </h1>
@@ -25,8 +30,8 @@ const CardEvent = ({ title, desc, timeEvent }) => {
         {truncateText(desc, 3)}
       </h2>
       <div className="flex gap-2">
-        <h2 className="text-white">Thoi gian dien ra:</h2>
-        <h2 className="text-red-600">Sắp diễn ra</h2>
+        <h2 className="text-white">{t("event.time")}</h2>
+        <h2 className="text-red-600">{t("event.timeto")}</h2>
       </div>
       <div>
         <CountdownTimer eventTime={timeEvent || eventTime} />
