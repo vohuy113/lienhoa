@@ -12,5 +12,75 @@
     "welcome_message": "Chào mừng bạn đến với Huế Golf Club",
     "slogan": "Nâng tầm trình độ, kết nối đam mê",
     "contact": "Liên hệ chúng tôi"
+  },
+  "about-us": {
+    "title": "Đôi nét về Huế Golf Club",
+    "des_1": "Golf Huế Club không chỉ là nơi để thể hiện kỹ năng golf mà còn là một môi trường thú vị để các golfer chia sẻ kiến thức và kinh nghiệm. Từ các buổi tập huấn định kỳ đến các hội thảo và workshop, các thành viên của câu lạc bộ có cơ hội học hỏi từ nhau và phát triển kỹ năng của mình.",
+    "des_2": "Điểm đến lý tưởng: Golf Huế Club là điểm đến cho bất kỳ ai đam mê golf và mong muốn trải nghiệm sự kết hợp giữa thể thao và thiên nhiên Với không gian xanh mát, dịch vụ chuyên nghiệp và cộng đồng golf đa dạng, câu lạc bộ này đang trở thành điểm đến hàng đầu cho các golfer tại Huế",
+    "des_3": "Cộng đồng golf đa dạng: Golf Huế Club hân hạnh chào đón các golfer từ mọi lứa tuổi và trình độ. Từ những người mới bắt đầu đến những golfer chuyên nghiệp, mọi người đều có cơ hội kết nối và chia sẻ niềm đam mê với nhau tại địa điểm này."
+  },
+  "mission": {
+    "about": "Về chúng tôi",
+    "title": "Sứ mệnh Huế Golf Club",
+    "des_1": "Tại Huế Golf Club, chúng tôi cam kết tạo ra một môi trường golf chuyên nghiệp, hòa mình vào văn hóa địa phương và phát triển bền vững trong cộng đồng golf Việt Nam. Chúng tôi không chỉ là nơi để tập luyện và thi đấu, mà còn là một điểm đến để thắp sáng niềm đam mê golf, kết nối cộng đồng và tạo ra những kỷ niệm không thể nào quên.",
+    "feature_1": "Học viên",
+    "feature_2": "Năm hoạt động",
+    "feature_3": "Đối tác",
+    "feature_4": "Sự kiện tham gia"
+  },
+  "goal": {
+    "title": "Mục tiêu của chúng tôi",
+    "feature_1": "Là điểm đến tập golf Thân Thiện & Chuyên Nghiệp.",
+    "feature_2": "Cung cấp các chương trình đào tạo chuyên nghiệp để nâng cao kỹ năng golf.",
+    "feature_3": "Xây dựng mối quan hệ đối tác bền vững và thúc đẩy sự phát triển cộng đồng golf.",
+    "feature_4": "Tổ chức các sự kiện golf và hoạt động giao lưu hấp dẫn.",
+    "feature_5": "Đóng góp vào các hoạt động xã hội và bảo vệ môi trường."
+  },
+  "goal2": {
+    "title": "Mục tiêu của chúng tôi",
+    "des_1": "Sân tập Golf tại Huế Golf Club là không gian lý tưởng để golf thủ trải nghiệm và nâng cao trình độ. Với trang thiết bị hiện đại và không gian rộng rãi, sân tập không chỉ là nơi để rèn luyện kỹ thuật từ cú đánh cho đến cú putt, mà còn là điểm đến lý tưởng để thư giãn và giao lưu với cộng đồng golf. Bạn sẽ tìm thấy không chỉ sự tiện nghi mà còn là một môi trường đầy đủ sự hỗ trợ và động viên, giúp bạn phát triển và tự tin hơn trong mỗi cú đánh trên sân golf.",
+    "des_2": "Huế Golf Club cung cấp một loạt các tiện ích đẳng cấp, bao gồm sân tập hiện đại, dịch vụ hướng dẫn chuyên nghiệp và một môi trường thân thiện để rèn luyện kỹ thuật và thư giãn.",
+    "title_2": "Bảng giá",
+    "table_1": "100 bóng",
+    "table_2": "Bóng ngày:"
+  },
+  "event": {
+    "event": "Sự kiện",
+    "title": "Kỷ niệm 10 năm thành lập Huế Golf",
+    "des": "",
+    "time": "Thời gian diễn ra",
+    "timeto": "Sắp diễn ra"
+  },
+  "contact": {
+    "contact": "Liên hệ",
+    "register": "Đăng ký nhận thông tin về ưu đãi, sản phẩm mới và khuyến mãi",
+    "submit": "Gửi",
+    "name": "Họ và tên",
+    "email": "Email",
+    "phone": "Phone",
+    "content": "Nội dung cần trao đổi"
+  },
+  "courses": {
+    "title": "Khoá học & chương trình đào tạo",
+    "title_2": "Khóa học cơ bản cho người mới",
+    "des": "Chúng tôi cung cấp các khóa học đa dạng từ cơ bản đến nâng cao, phù hợp với mọi trình độ.",
+    "des_2": "Khóa học \"Cơ Bản Cho Người Mới \" tại Huế Golf Club là hành trình bắt đầu hoàn hảo cho những người mới bắt đầu chơi golf.",
+    "feature_1.1": "Khoá học chính thức 10 buổi",
+    "feature_1.2": "Sự đầu tư hoàn hảo cho sự tiến bộ và sự tự tin trong golf của bạn.",
+    "feature_2.1": "Hệ thống trackman phân tích Swing bằng hình ảnh",
+    "feature_2.2": "Hệ thống Trackman: Phân tích swing bằng hình ảnh chính xác và tiên tiến.",
+    "feature_3.1": "Huấn luyện viên cấp độ 1",
+    "feature_3.2": "Chuyên môn và tận tâm, sẵn lòng hỗ trợ bạn chinh phục những bước đầu tiên trong sự nghiệp golf của bạn.",
+    "feature_4.1": "Bóng tập không giới hạn",
+    "feature_4.2": "Khám phá tiềm năng vô tận với việc rèn luyện mà không lo về số lượng.",
+    "price_1": "3.990.000 VNĐ/30 ngày",
+    "price_2": "2.900.000 VNĐ/30 ngày",
+    "logup-btn": "Đăng ký ngay!",
+    "user": "Chuyên gia về Golf"
+  },
+  "section-image": {
+    "title": "HÌNH ẢNH & VIDEO",
+    "image": "Hình ảnh",
+    "video": "Video"
   }
 }

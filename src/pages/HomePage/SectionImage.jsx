@@ -6,15 +6,17 @@ import img3 from "../../assets/SectionVideoImage/Rectangle3.png";
 import img4 from "../../assets/SectionVideoImage/Rectangle4.png";
 import img5 from "../../assets/SectionVideoImage/Rectangle5.png";
 import img6 from "../../assets/SectionVideoImage/Rectangle6.png";
+import { useTranslation } from "react-i18next";
 
 const SectionImage = () => {
+  const { t } = useTranslation();
   return (
     <div
-      id="news"
-      className=" flex flex-col items-center gap-4 w-full p-4 xl:p-20 justify-between"
+      id="section-image"
+      className=" flex flex-col items-center gap-4 w-full p-4 xl:p-20"
     >
-      <h1 className="uppercase lg:text-[40px] font-semibold md:text-3xl text-2xl">
-        Hình ảnh & Video
+      <h1 className="text-center mt-6 font-semibold uppercase text-[28px] lg:text-[40px] leading-tight">
+        {t("section-image.title")}
       </h1>
       <ToggleSwitch label=" " />
       <div className="lg:mt-6 mt-3 w-full h-full flex flex-col lg:gap-6 md:gap-4 gap-3">

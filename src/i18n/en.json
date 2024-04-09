@@ -12,5 +12,75 @@
     "welcome_message": "Welcome to Hue Golf Club",
     "slogan": "Elevate your skills, pursue your passions",
     "contact": "Contact"
+  },
+  "about-us": {
+    "title": "A few details about Hue Golf Club",
+    "des_1": "Hue Golf Club is not just a place to showcase golfing skills but also an exciting environment for golfers to share knowledge and experiences. From regular training sessions to seminars and workshops, club members have the opportunity to learn from each other and develop their skills.",
+    "des_2": "Ideal Destination: Hue Golf Club is the destination for anyone passionate about golf and seeking to experience the combination of sports and nature. With its lush green spaces, professional services, and diverse golfing community, this club is becoming the top destination for golfers in Hue.",
+    "des_3": "Diverse Golfing Community: Hue Golf Club warmly welcomes golfers of all ages and skill levels. From beginners to professional golfers, everyone has the opportunity to connect and share their passion at this venue."
+  },
+  "mission": {
+    "about": "About Us",
+    "title": "The Mission of Hue Golf Club",
+    "des_1": "At Hue Golf Club, we are committed to creating a professional golf environment, integrating into the local culture, and fostering sustainable development within the Vietnamese golf community. We are not only a place for training and competition but also a destination to ignite the passion for golf, connect the community, and create unforgettable memories",
+    "feature_1": "Students",
+    "feature_2": "Year of establishment",
+    "feature_3": "Partners",
+    "feature_4": "Participating Events"
+  },
+  "goal": {
+    "title": "Our Goals",
+    "feature_1": "A Friendly & Professional golf training destination.",
+    "feature_2": "Providing professional training programs to enhance Golf skills.",
+    "feature_3": "Building sustainable partnerships and promoting community Golf development.",
+    "feature_4": "Organizing Golf events and engaging networking activities.",
+    "feature_5": "Contributing to social activities and environmental protection"
+  },
+  "goal2": {
+    "title": "Our Goals",
+    "des_1": "The practice golf course at Hue Golf Club is the ideal space for golfers to experience and enhance their skills. With modern facilities and ample space, the practice course is not only a place to refine techniques from drives to putts but also an ideal destination for relaxation and networking within the golfing community. You'll find not only convenience but also a supportive environment that encourages growth and confidence with every swing on the golf course.",
+    "des_2": "Hue Golf Club offers a range of premium amenities, including a modern practice course, professional coaching services, and a friendly environment for honing skills and relaxation",
+    "title_2": "Price List",
+    "table_1": "100 Ball",
+    "table_2": "Daily Ball Rental:"
+  },
+  "event": {
+    "event": "Events",
+    "title": "Hue Golf's 10th Anniversary Celebration",
+    "des": "",
+    "time": "Time of the Event",
+    "timeto": "Upcoming"
+  },
+  "contact": {
+    "contact": "Contact Us",
+    "register": "Register for updates on offers, new products, and promotions",
+    "submit": "Submit",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "content": "The content to be discussed"
+  },
+  "courses": {
+    "title": "Courses & Training Programs",
+    "title_2": "Basic Course for Beginners",
+    "des": "We offer a diverse range of courses from basic to advanced, suitable for all skill levels.",
+    "des_2": "Training course \"Basic Course for Beginners\" We offer a diverse range of courses from basic to advanced, suitable for all skill levels.",
+    "feature_1.1": "Official 10-session course",
+    "feature_1.2": "The perfect investment for your progress and confidence in Golf.",
+    "feature_2.1": "The trackman system analyzes swings using imagery.",
+    "feature_2.2": "The trackman system: Accurate and advanced swing analysis using imagery.",
+    "feature_3.1": "Level 1 Coach",
+    "feature_3.2": "Skilled and dedicated, ready to support you in conquering the first steps of your golfing journey.",
+    "feature_4.1": "Unlimited practice balls",
+    "feature_4.2": "Unlock endless potential with unlimited training without worrying about quantity.",
+    "price_1": "3,990,000 VND/30 days",
+    "price_2": "2.900.000 VND/30 days",
+    "logup-btn": "Register Now!",
+    "user": "Golf Expert"
+  },
+  "section-image": {
+    "title": "IMAGES & VIDEOS",
+    "image": "Images",
+    "video": "Videos"
   }
 }

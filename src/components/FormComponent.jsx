@@ -6,7 +6,10 @@ import message_ic from "../assets/SectionContact/message.svg";
 import { saveDataFromForm } from "../services/handleForm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
+
 const FormComponent = ({ title, subTitle }) => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,7 +39,10 @@ const FormComponent = ({ title, subTitle }) => {
   };
 
   return (
-    <div className="border border-black p-[50px] mb-6 max-w-2xl w-full h-max mx-auto">
+    <div
+      id="contact"
+      className="border border-black p-[50px] mb-6 max-w-2xl w-full h-max mx-auto"
+    >
       <h1 className="uppercase lg:text-[40px] lg:leading-[62px] font-semibold ">
         {title}
       </h1>
@@ -55,7 +61,7 @@ const FormComponent = ({ title, subTitle }) => {
             type="text"
             id="name"
             name="name"
-            placeholder="Họ và tên"
+            placeholder={`${t("contact.name")}`}
             value={formData.name}
             onChange={handleChange}
           />
@@ -71,7 +77,7 @@ const FormComponent = ({ title, subTitle }) => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Email"
+            placeholder={`${t("contact.email")}`}
           />
         </div>
         <div className="w-full py-3 flex gap-[10px] items-center border-b border-black">
@@ -85,7 +91,7 @@ const FormComponent = ({ title, subTitle }) => {
             name="phone_number"
             value={formData.phone_number}
             onChange={handleChange}
-            placeholder="Số điện thoại"
+            placeholder={`${t("contact.phone")}`}
           />
         </div>
         <div className="w-full py-3 flex gap-[10px] items-center border-b border-black">
@@ -98,14 +104,14 @@ const FormComponent = ({ title, subTitle }) => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Nội dung cần trao"
+            placeholder={`${t("contact.content")}`}
           />
         </div>
         <button
           className="lg:py-3 lg:px-[60px] py-2 px-12 text-white bg-primary"
           type="submit"
         >
-          Submit
+          {t("contact.submit")}
         </button>
       </form>
     </div>
