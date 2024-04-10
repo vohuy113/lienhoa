@@ -8,6 +8,23 @@
     "news": "Tin tức",
     "contact": "Liên hệ"
   },
+  "footer": {
+    "slogan": "Hơn chỉ là một trò chơi. Đó là một lối sống",
+    "page": "Trang chủ",
+    "page_item1": "Giới thiệu",
+    "page_item2": "Đào tạo",
+    "page_item3": "Sân tập",
+    "page_item4": "Tin tức",
+    "page_item5": "Sự kiện",
+    "info": "Thông tin",
+    "info_item1": "Liên hệ",
+    "info_item2": "Đăng ký khoá học",
+    "info_item3": "Đặt sân",
+    "info_item4": "FAQs",
+    "headquarters": "Trụ sở",
+    "address_1": "Số 290 Phạm Văn Đồng ",
+    "address_2": "Phú Thượng, Phú Vang, Thừa Thiên Huế"
+  },
   "wellcome": {
     "welcome_message": "Chào mừng bạn đến với Huế Golf Club",
     "slogan": "Nâng tầm trình độ, kết nối đam mê",

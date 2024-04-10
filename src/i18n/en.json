@@ -8,6 +8,23 @@
     "news": "News",
     "contact": "Contact"
   },
+  "footer": {
+    "slogan": "More than just a game. It's a lifestyle",
+    "page": "Page",
+    "page_item1": "Introduction",
+    "page_item2": "Training",
+    "page_item3": "Practice field",
+    "page_item4": "News",
+    "page_item5": "Events",
+    "info": "Information",
+    "info_item1": "Contact",
+    "info_item2": "Register for a course",
+    "info_item3": "Book a field",
+    "info_item4": "FAQs",
+    "headquarters": "Headquarters",
+    "address_1": "290 Pham Van Dong Street ",
+    "address_2": "Phu Thuong, Phu Vang, Thua Thien Hue"
+  },
   "wellcome": {
     "welcome_message": "Welcome to Hue Golf Club",
     "slogan": "Elevate your skills, pursue your passions",
