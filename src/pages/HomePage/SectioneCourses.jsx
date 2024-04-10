@@ -23,7 +23,7 @@ const SectioneCourses = () => {
       <p className="text-[16px] mt-2 mb-10 text-center">{t("courses.des")}</p>
       <div className="block xl:flex md:flex-row gap-10">
         <div className="basis-2/5 relative  inset-0 bg-gradient-to-b from-transparent to-black text-white">
-          <img className="w-full h-full " src={course_img} />
+          <img className="w-full h-full object-cover " src={course_img} />
           <div className="absolute bottom-[24px]  right-[16px] left-[16px] flex flex-col gap-4">
             <h1 className="text-[28px]   lg:text-[42px] text-left font-semibold text-white mb-2">
               {t("courses.title_2")}
@@ -38,10 +38,7 @@ const SectioneCourses = () => {
                 <img src={course_svg} />
                 <span className="block text-[14px] ml-4 leading-6">(1.2K)</span>
               </div>
-              <div className="flex flex-col">
-                <span className=" text-end text-[14px] text-[#FF3E3E] line-through font-semibold">
-                  {t("courses.price_1")}
-                </span>
+              <div className="">
                 <span className="text-white font-bold text-[16px]">
                   {t("courses.price_2")}
                 </span>
@@ -49,10 +46,13 @@ const SectioneCourses = () => {
             </div>
             <div className="flex items-center justify-between">
               <div className="user flex items-center">
-                <img className="w-[50px] h-[50px] mr-3" src={user_img} />
+                <img
+                  className="w-[50px] h-[50px] mr-3 rounded-full object-cover"
+                  src={user_img}
+                />
                 <div className="flex flex-col">
                   <span className="text-[16px] text-left font-bold">
-                    Kitani Sarasvati
+                    {t("courses.name")}
                   </span>
                   <span className="text-left text-[12px] mt-2">
                     {t("courses.user")}

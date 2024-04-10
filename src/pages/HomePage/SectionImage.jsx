@@ -1,10 +1,10 @@
 import React from "react";
 import ToggleSwitch from "../../components/ToggleSwitch";
-import img1 from "../../assets/SectionVideoImage/Rectangle1.png";
-import img2 from "../../assets/SectionVideoImage/Rectangle2.png";
-import img3 from "../../assets/SectionVideoImage/Rectangle3.png";
+import img1 from "../../assets/SectionVideoImage/TMS_0226.jpg";
+import img2 from "../../assets/SectionVideoImage/2.jpg";
+import img3 from "../../assets/SectionVideoImage/TMS_0194.jpg";
 import img4 from "../../assets/SectionVideoImage/Rectangle4.png";
-import img5 from "../../assets/SectionVideoImage/Rectangle5.png";
+import img5 from "../../assets/SectionVideoImage/TMS_0073.jpg";
 import img6 from "../../assets/SectionVideoImage/Rectangle6.png";
 import { useTranslation } from "react-i18next";
 
@@ -22,7 +22,16 @@ const SectionImage = () => {
       <div className="lg:mt-6 mt-3 w-full h-full flex flex-col lg:gap-6 md:gap-4 gap-3">
         <div className="h-1/2 flex flex-col md:flex-row w-full lg:gap-6 md:gap-4 gap-3 justify-between object-cover overflow-hidden">
           <div className="flex-1 bg-slate-500">
-            <img src={img6} alt="image 1" className="h-full w-full" />
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/5tlQ_2fvlTo?si=n-ClPAa-EqTKbqvU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
           <div className="h-full justify-between flex md:flex-col w-full md:w-[calc(100%/3-16px)] lg:gap-6 md:gap-4 gap-3">
             <div className="w-1/2 md:w-full h-1/2 overflow-hidden ">
