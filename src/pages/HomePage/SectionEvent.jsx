@@ -18,15 +18,41 @@ const SectionEvent = () => {
   };
   const [data, setData] = useState([]);
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const eventData = await getEvent();
-        setData(eventData);
-      } catch (error) {
-        console.error("Failed to fetch event:", error);
-      }
-    };
-    fetchData();
+    // const fetchData = async () => {
+    //   try {
+    //     const eventData = await getEvent();
+    //     setData(eventData);
+    //   } catch (error) {
+    setData([
+      {
+        title:
+          "Title 1: Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
+        timeEvent: new Date("2024-04-10T10:30:00"),
+      },
+      {
+        title:
+          "Title 2: Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
+        timeEvent: new Date("2024-04-10T10:30:00"),
+      },
+      {
+        title:
+          "Title 3: Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
+        timeEvent: new Date("2024-04-10T10:30:00"),
+      },
+      {
+        title:
+          "Title 4: Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
+        timeEvent: new Date("2024-04-10T10:30:00"),
+      },
+    ]);
+    //     console.error("Failed to fetch event:", error);
+    //   }
+    // };
+    // fetchData();
   }, []);
   // useEffect(() => {
   //   if (!data) {
@@ -66,28 +92,32 @@ const SectionEvent = () => {
         img={IMG}
         // img={item?._embedded["wp:featuredmedia"]?.["0"]?.source_url}
       />
-      {/* {!!data?.length && ( */}
-      <Carousel
-        autoPlay
-        infiniteLoop
-        showArrows={false}
-        showThumbs={false}
-        className="w-full lg:w-1/2 h-full"
-      >
-        {data &&
-          data.map((item) => (
-            <div className="flex w-full h-full">
-              <CardEvent
-                title={item?.title.rendered}
-                desc={
-                  "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ..."
-                }
-                timeEvent={item?.acf.time}
-              />
-            </div>
-          ))}
-      </Carousel>
-      {/* )} */}
+      {!!data?.length && (
+        <Carousel
+          autoPlay
+          infiniteLoop
+          showArrows={false}
+          showThumbs={false}
+          className="w-full lg:w-1/2 h-full"
+        >
+          {data &&
+            data.map((item) => (
+              <div className="flex w-full h-full">
+                <CardEvent
+                  // title={item?.title.rendered || item.title}
+                  // desc={
+                  //   "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ..." ||
+                  //   item.desc
+                  // }
+                  // timeEvent={item?.acf.time || item.timeEvent}
+                  title={item.title}
+                  desc={item.desc}
+                  timeEvent={item.timeEvent}
+                />
+              </div>
+            ))}
+        </Carousel>
+      )}
     </div>
   );
 };

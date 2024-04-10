@@ -6,14 +6,16 @@ import footer3 from "../../assets/SectionContact/footer3.png";
 import footer4 from "../../assets/SectionContact/footer4.png";
 import footer5 from "../../assets/SectionContact/footer5.png";
 import footer6 from "../../assets/SectionContact/footer6.png";
+import { useTranslation } from "react-i18next";
 
 const SectionContact = () => {
+  const { t } = useTranslation();
   return (
     <>
-      <div className="px-5 py-8 mb-6">
+      <div id="contact" className="px-5 py-8">
         <FormComponent
-          title={"Liên Hệ"}
-          subTitle={"Đăng ký để nhận ưu đãi, sản phẩm khuyến mãi"}
+          title={`${t("contact.contact")}`}
+          subTitle={`${t("contact.register")}`}
         />
       </div>
       <div className="flex w-full">

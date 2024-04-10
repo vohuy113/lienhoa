@@ -19,7 +19,7 @@ const SectioneGoal2 = () => {
           </p>
         </div>
         <div className="pt-6 lg:pt-16 pb-[56px] block lg:flex lg:flex-row">
-          <div className=" basis-2/5">
+          <div className=" basis-1/2 pr-0 lg:pr-8">
             <p className="px-4 lg:px-8 xl:px-[80px] text-[16px] mb-6 text-justify">
               {t("goal2.des_2")}
             </p>
@@ -55,7 +55,7 @@ const SectioneGoal2 = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-4 xl:gap-[60px] pt-8 lg:pt-0 pl-4 pr-4 lg:pr-0 lg:pl-10 xl:pl-32  ">
+          <div className="basis-1/2 grid grid-cols-3 gap-4 xl:gap-[60px] pt-8 lg:pt-0 pl-4 pr-4 lg:pr-0 lg:pl-10 xl:pl-16  ">
             <img
               className="mt-4 lg:mt-0 w-full h-full object-cover"
               src={goal2_img3}
