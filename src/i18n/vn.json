@@ -82,5 +82,9 @@
     "title": "HÌNH ẢNH & VIDEO",
     "image": "Hình ảnh",
     "video": "Video"
+  },
+  "modal": {
+    "title": "Đăng ký khóa học",
+    "subTitle": "Đăng ký nhận thông tin về ưu đãi, sản phẩm mới và khuyến mãi"
   }
 }

@@ -10,7 +10,7 @@ import footer6 from "../../assets/SectionContact/footer6.png";
 const SectionContact = () => {
   return (
     <>
-      <div className="px-5 py-8">
+      <div className="px-5 py-8 mb-6">
         <FormComponent
           title={"Liên Hệ"}
           subTitle={"Đăng ký để nhận ưu đãi, sản phẩm khuyến mãi"}

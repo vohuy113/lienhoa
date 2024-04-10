@@ -28,6 +28,32 @@ const SectionEvent = () => {
     };
     fetchData();
   }, []);
+  // useEffect(() => {
+  //   if (!data) {
+  //     setData([
+  //       {
+  //         title: "Title 1",
+  //         desc: "Description 1",
+  //         timeEvent: new Date("2024-04-10T10:30:00"),
+  //       },
+  //       {
+  //         title: "Title 2",
+  //         desc: "Description 2",
+  //         timeEvent: new Date("2024-04-10T10:30:00"),
+  //       },
+  //       {
+  //         title: "Title 3",
+  //         desc: "Description 3",
+  //         timeEvent: new Date("2024-04-10T10:30:00"),
+  //       },
+  //       {
+  //         title: "Title 4",
+  //         desc: "Description 4",
+  //         timeEvent: new Date("2024-04-10T10:30:00"),
+  //       },
+  //     ]);
+  //   }
+  // }, [data]);
   const { t } = useTranslation();
 
   console.log(data);
@@ -40,28 +66,28 @@ const SectionEvent = () => {
         img={IMG}
         // img={item?._embedded["wp:featuredmedia"]?.["0"]?.source_url}
       />
-      {!!data.length && (
-        <Carousel
-          autoPlay
-          infiniteLoop
-          showArrows={false}
-          showThumbs={false}
-          className="w-full lg:w-1/2 h-full"
-        >
-          {data &&
-            data.map((item) => (
-              <div className="flex w-full h-full">
-                <CardEvent
-                  title={item?.title.rendered}
-                  desc={
-                    "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ..."
-                  }
-                  timeEvent={item?.acf.time}
-                />
-              </div>
-            ))}
-        </Carousel>
-      )}
+      {/* {!!data?.length && ( */}
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showArrows={false}
+        showThumbs={false}
+        className="w-full lg:w-1/2 h-full"
+      >
+        {data &&
+          data.map((item) => (
+            <div className="flex w-full h-full">
+              <CardEvent
+                title={item?.title.rendered}
+                desc={
+                  "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ..."
+                }
+                timeEvent={item?.acf.time}
+              />
+            </div>
+          ))}
+      </Carousel>
+      {/* )} */}
     </div>
   );
 };

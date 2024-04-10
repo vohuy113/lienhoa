@@ -7,8 +7,7 @@ import { saveDataFromForm } from "../services/handleForm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTranslation } from "react-i18next";
-
-const FormComponent = ({ title, subTitle }) => {
+const FormComponent = ({ title, subTitle, closeBtn, handleClose }) => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
@@ -39,10 +38,12 @@ const FormComponent = ({ title, subTitle }) => {
   };
 
   return (
-    <div
-      id="contact"
-      className="border border-black p-[50px] mb-6 max-w-2xl w-full h-max mx-auto"
-    >
+    <div className="border border-black p-[50px] max-w-2xl w-full h-max mx-auto relative">
+      <img
+        src={closeBtn}
+        className="absolute w-6 h-6 top-3 right-3"
+        onClick={handleClose}
+      />
       <h1 className="uppercase lg:text-[40px] lg:leading-[62px] font-semibold ">
         {title}
       </h1>

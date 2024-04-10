@@ -82,5 +82,9 @@
     "title": "IMAGES & VIDEOS",
     "image": "Images",
     "video": "Videos"
+  },
+  "modal": {
+    "title": "Enroll in a Course",
+    "subTitle": "Subscribe to receive information about offers, new products, and promotions."
   }
 }

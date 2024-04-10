@@ -11,6 +11,7 @@ export const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [date, setDate] = useState("");
   const [icon, setIcon] = useState(clear);
+  let key = "7d109b558fcb44d4290815e66f21e444";
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
