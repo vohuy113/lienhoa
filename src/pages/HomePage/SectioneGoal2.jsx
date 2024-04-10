@@ -19,7 +19,7 @@ const SectioneGoal2 = () => {
           </p>
         </div>
         <div className="pt-6 lg:pt-16 pb-[56px] block lg:flex lg:flex-row">
-          <div className=" basis-1/2 pr-8">
+          <div className=" basis-1/2 pr-0 lg:pr-8">
             <p className="px-4 lg:px-8 xl:px-[80px] text-[16px] mb-6 text-justify">
               {t("goal2.des_2")}
             </p>
