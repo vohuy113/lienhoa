@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const { t } = useTranslation();
   const [activeMenu, setActiveMenu] = useState("");
-
   const handleMenuClick = (sectionId) => {
     setActiveMenu(sectionId);
     const section = document.getElementById(sectionId);

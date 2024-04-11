@@ -72,10 +72,7 @@ const DrawerMobile = ({ showMenu, handleCloseDrawer }) => {
                 >
                   <Link to={"/home#contact"}>{t("header.contact")}</Link>
                 </li>
-                <li
-                  className="p-4 border-b w-full text-start"
-                  onClick={handleCloseDrawer}
-                >
+                <li className="p-4 border-b w-full text-start">
                   <FlagLang />
                 </li>
                 <li
