@@ -38,7 +38,7 @@ const FormComponent = ({ title, subTitle, closeBtn, handleClose }) => {
   };
 
   return (
-    <div className="border border-black p-[50px] max-w-2xl w-full h-max mx-auto relative">
+    <div className="border bg-white border-black p-[50px] max-w-2xl w-full h-max mx-auto relative">
       {closeBtn && (
         <img
           src={closeBtn}

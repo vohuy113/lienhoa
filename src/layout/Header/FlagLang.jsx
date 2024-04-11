@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import flag_vi from "../../assets/Header_img/icon_vi.png";
 import flag_en from "../../assets/Header_img/icon_en.png";
 import arrow_ic from "../../assets/Header_img/arrow-down.svg";
@@ -8,8 +8,12 @@ const FlagLang = () => {
     i18n.changeLanguage(lang);
     setLanguage(lang);
     setIsShowLang(false);
+    localStorage.setItem("lng", lang);
+    localStorage.setItem("flag", lang);
   };
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("flag") || "en"
+  );
   const [isShowLang, setIsShowLang] = useState(false);
   return (
     <div className="relative">
