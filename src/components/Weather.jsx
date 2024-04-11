@@ -6,11 +6,14 @@ import drizzle from "../assets/Homepage/SectionWellcome/drizzle.png";
 import humidity from "../assets/Homepage/SectionWellcome/humidity.png";
 import snow from "../assets/Homepage/SectionWellcome/snow.png";
 import wind from "../assets/Homepage/SectionWellcome/wind.png";
-
+import { useTranslation } from "react-i18next";
 export const Weather = () => {
+  const { t } = useTranslation();
+
   const [weatherData, setWeatherData] = useState(null);
   const [date, setDate] = useState("");
   const [icon, setIcon] = useState(clear);
+  const key = process.env.REACT_APP_API_KEY_WEATHER;
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
@@ -58,7 +61,31 @@ export const Weather = () => {
     const currentIcon = weatherData?.weather[0].icon || clear;
     setIcon(iconMapping[currentIcon]);
   }, [weatherData]);
-  console.log(weatherData);
+  function translateDescription(description) {
+    switch (description) {
+      case "clear sky":
+        return t("weather.clearSky");
+      case "few clouds":
+        return t("weather.fewClouds");
+      case "scattered clouds":
+        return t("weather.scatteredClouds");
+      case "broken clouds":
+        return t("weather.brokenClouds");
+      case "shower rain":
+        return t("weather.showerRain");
+      case "rain":
+        return t("weather.rain");
+      case "thunderstorm":
+        return t("weather.thunderstorm");
+      case "snow":
+        return t("weather.snow");
+      case "mist":
+        return t("weather.mist");
+      default:
+        return description;
+    }
+  }
+  console.log("Weather");
   return (
     <div className="flex items-center justify-between flex-col md:flex-row mt-12 md:mt-0">
       <div className="flex flex-col items-center justify-center">
@@ -69,11 +96,11 @@ export const Weather = () => {
           <span className="absolute top-0 right-[-20px]">°C</span>
         </div>
         <h2 className="lg:text-base text-sm">
-          {weatherData?.weather[0].description || "Nhiều mấy"}
+          {translateDescription(weatherData?.weather[0].description)}
         </h2>
       </div>
       <img src={icon || clear} className="w-20 h-auto" />
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-center md:items-start">
         <h1 className="lg:text-4xl lg:font-semibold">Hue, VietNam</h1>
         <h2 className="text-sm ">{date}</h2>
       </div>

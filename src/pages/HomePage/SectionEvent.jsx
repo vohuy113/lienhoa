@@ -7,15 +7,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { useTranslation } from "react-i18next";
 const SectionEvent = () => {
-  var settings = {
-    dots: true,
-    infinite: true,
-    arrows: false,
-    speed: 500,
-    autoPlay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   const [data, setData] = useState([]);
   useEffect(() => {
     // const fetchData = async () => {
@@ -28,25 +19,25 @@ const SectionEvent = () => {
         title:
           "Title 1: Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
         desc: "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
-        timeEvent: new Date("2024-04-10T10:30:00"),
+        timeEvent: new Date("2024-04-15T10:30:00"),
       },
       {
         title:
           "Title 2: Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
         desc: "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
-        timeEvent: new Date("2024-04-10T10:30:00"),
+        timeEvent: new Date("2024-04-17T10:30:00"),
       },
       {
         title:
           "Title 3: Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
         desc: "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
-        timeEvent: new Date("2024-04-10T10:30:00"),
+        timeEvent: new Date("2024-04-21T10:30:00"),
       },
       {
         title:
           "Title 4: Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
         desc: "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...",
-        timeEvent: new Date("2024-04-10T10:30:00"),
+        timeEvent: new Date("2024-04-22T10:30:00"),
       },
     ]);
     //     console.error("Failed to fetch event:", error);
@@ -99,8 +90,8 @@ const SectionEvent = () => {
           className="w-full lg:w-1/2 h-full"
         >
           {data &&
-            data.map((item) => (
-              <div className="flex w-full h-full">
+            data.map((item, index) => (
+              <div key={item.title + index} className="flex w-full h-full">
                 <CardEvent
                   // title={item?.title.rendered || item.title}
                   // desc={

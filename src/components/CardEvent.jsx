@@ -19,8 +19,6 @@ const CardEvent = ({ title, desc, timeEvent }) => {
     return text;
   };
   const { t } = useTranslation();
-
-  console.log(truncateText(title, 2));
   return (
     <div
       id="event"

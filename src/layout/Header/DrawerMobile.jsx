@@ -4,6 +4,7 @@ import close_btn from "../../assets/Header_img/icons8-close.svg";
 import FlagLang from "./FlagLang";
 import Contact from "./Contact";
 import { useTransition, animated } from "react-spring";
+import { Link } from "react-router-dom";
 const DrawerMobile = ({ showMenu, handleCloseDrawer }) => {
   const { t } = useTranslation();
   const transitions = useTransition(showMenu, {
@@ -29,31 +30,58 @@ const DrawerMobile = ({ showMenu, handleCloseDrawer }) => {
                 <img src={close_btn} alt="Close" className="w-full h-full" />
               </button>
               <ul className="mt-16 w-full flex flex-col gap-2 text-base items-start">
-                <li className="p-4 border-b w-full text-start">
-                  {t("header.home")}
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
+                  <Link to={"/"}>{t("header.home")}</Link>
                 </li>
-                <li className="p-4 border-b w-full text-start">
-                  {t("header.introduce")}
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
+                  <Link to={"/home#mission"}>{t("header.introduce")}</Link>
                 </li>
-                <li className="p-4 border-b w-full text-start">
-                  {t("header.training")}
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
+                  <Link to={"/home#courses"}>{t("header.training")}</Link>
                 </li>
-                <li className="p-4 border-b w-full text-start">
-                  {t("header.ground")}
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
+                  <Link to={"/home#goal2"}>{t("header.ground")}</Link>
                 </li>
-                <li className="p-4 border-b w-full text-start">
-                  {t("header.event")}
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
+                  <Link to={"/events"}>{t("header.event")}</Link>
                 </li>
-                <li className="p-4 border-b w-full text-start">
-                  {t("header.news")}
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
+                  <Link to={"/news"}>{t("header.news")}</Link>
                 </li>
-                <li className="p-4 border-b w-full text-start">
-                  {t("header.contact")}
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
+                  <Link to={"/home#contact"}>{t("header.contact")}</Link>
                 </li>
-                <li className="p-4 border-b w-full text-start">
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
                   <FlagLang />
                 </li>
-                <li className="p-4 border-b w-full text-start">
+                <li
+                  className="p-4 border-b w-full text-start"
+                  onClick={handleCloseDrawer}
+                >
                   <Contact />
                 </li>
               </ul>
