@@ -1,10 +1,10 @@
-import img1 from "../assets/Product_img/image 1.png";
-import img2 from "../assets/Product_img/image 9.png";
-import img3 from "../assets/Product_img/image 3.png";
-import img4 from "../assets/Product_img/image 4.png";
-import img5 from "../assets/Product_img/image 8.png";
-import img6 from "../assets/Product_img/image 6.png";
-import img7 from "../assets/Product_img/image 7.png";
+import img1 from "../assets/SectionContact/footer1.png";
+import img2 from "../assets/SectionContact/footer2.png";
+import img3 from "../assets/SectionContact/footer3.png";
+import img4 from "../assets/SectionContact/footer4.png";
+import img5 from "../assets/SectionContact/footer5.png";
+import img6 from "../assets/SectionContact/footer6.png";
+// import img7 from "../assets/SectionContact/footer7.png";
 export const data = [
   {
     img: img1,
@@ -42,13 +42,13 @@ export const data = [
     time: "2024-04-05T10:30:00Z",
   },
   {
-    img: img7,
+    img: img5,
     name: "Potty",
     description: "Stylish cafe chair",
     time: "2024-04-05T10:30:00Z",
   },
   {
-    img: img8,
+    img: img2,
     name: "Muggo",
     description: "Stylish cafe chair",
     time: "2024-04-05T10:30:00Z",

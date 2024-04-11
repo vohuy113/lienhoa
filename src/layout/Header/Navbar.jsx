@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleMenuClick("home")}
         >
-          <a>{t("header.home")}</a>
+          <Link to={"/"}>{t("header.home")}</Link>
         </li>
         <li
           className={`hover:text-primary cursor-pointer ${
@@ -32,23 +33,23 @@ const Navbar = () => {
           }`}
           onClick={() => handleMenuClick("mission")}
         >
-          <a>{t("header.introduce")}</a>
+          <Link to={"/home#mission"}>{t("header.introduce")}</Link>
         </li>
         <li
           className={`hover:text-primary cursor-pointer ${
-            activeMenu === "training" ? "active" : ""
+            activeMenu === "courses" ? "active" : ""
           }`}
-          onClick={() => handleMenuClick("training")}
+          onClick={() => handleMenuClick("courses")}
         >
-          <a>{t("header.training")}</a>
+          <Link to={"/home#courses"}>{t("header.training")}</Link>
         </li>
         <li
           className={`hover:text-primary cursor-pointer ${
-            activeMenu === "ground" ? "active" : ""
+            activeMenu === "goal2" ? "active" : ""
           }`}
-          onClick={() => handleMenuClick("ground")}
+          onClick={() => handleMenuClick("goal2")}
         >
-          <a>{t("header.ground")}</a>
+          <Link to={"/home#goal2"}>{t("header.ground")}</Link>
         </li>
         <li
           className={`hover:text-primary cursor-pointer ${
@@ -56,7 +57,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleMenuClick("event")}
         >
-          <a>{t("header.event")}</a>
+          <Link to={"/events"}>{t("header.event")}</Link>
         </li>
         <li
           className={`hover:text-primary cursor-pointer ${
@@ -64,7 +65,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleMenuClick("news")}
         >
-          <a>{t("header.news")}</a>
+          <Link to={"/news"}>{t("header.news")}</Link>
         </li>
       </ul>
     </nav>

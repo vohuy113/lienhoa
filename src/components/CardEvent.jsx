@@ -6,9 +6,15 @@ import i18n from "../services/i18n";
 const CardEvent = ({ title, desc, timeEvent }) => {
   const eventTime = new Date("2024-04-10T10:30:00");
   const truncateText = (text, maxLines) => {
-    const lines = text.split("\n");
-    if (lines.length > maxLines) {
-      return lines.slice(0, maxLines).join("\n") + "...";
+    if (typeof text !== "string") {
+      console.error("Invalid input: text must be a string");
+      return text;
+    }
+    if (text.includes("\n")) {
+      const lines = text.split("\n");
+      if (lines.length > maxLines) {
+        return lines.slice(0, maxLines).join("\n") + "...";
+      }
     }
     return text;
   };

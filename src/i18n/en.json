@@ -11,19 +11,17 @@
   "footer": {
     "slogan": "More than just a game. It's a lifestyle",
     "page": "Page",
-    "page_item1": "Introduction",
-    "page_item2": "Training",
-    "page_item3": "Practice field",
-    "page_item4": "News",
-    "page_item5": "Events",
-    "info": "Information",
-    "info_item1": "Contact",
-    "info_item2": "Register for a course",
-    "info_item3": "Book a field",
-    "info_item4": "FAQs",
-    "headquarters": "Headquarters",
-    "address_1": "290 Pham Van Dong Street ",
-    "address_2": "Phu Thuong, Phu Vang, Thua Thien Hue"
+    "introduce": "About Us",
+    "ground": "Ground",
+    "news": "News",
+    "event": "Event",
+    "information": "Information",
+    "contact": "Contact",
+    "register": "Enroll for a course",
+    "book": "Book",
+    "headquarter": "Headquarters",
+    "address1": "290 Pham Van Dong street",
+    "address2": "Phu Thuong, Phu Vang, Thua Thien Hue"
   },
   "wellcome": {
     "welcome_message": "Welcome to Hue Golf Club",
@@ -100,5 +98,9 @@
     "title": "IMAGES & VIDEOS",
     "image": "Images",
     "video": "Videos"
+  },
+  "modal": {
+    "title": "Enroll in a Course",
+    "subTitle": "Subscribe to receive information about offers, new products, and promotions."
   }
 }

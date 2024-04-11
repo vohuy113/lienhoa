@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import course_img from "../../assets/SectionCourses/course-img.png";
 import course_svg from "../../assets/SectionCourses/star_half_24px.svg";
 import course_svg1 from "../../assets/SectionCourses/star_purple500_24px.svg";
@@ -9,9 +9,15 @@ import Btn from "../../components/Btn";
 import user_img from "../../assets/SectionCourses/avatar.png";
 import CourseItem from "../../components/CourseItem";
 import { useTranslation } from "react-i18next";
+import ModalRegister from "../../components/ModalRegister";
+import Overlay from "../../components/Overlay";
 
 const SectioneCourses = () => {
+  const [showModal, setShowModal] = useState(false);
   const { t } = useTranslation();
+  const handleCloseOverlay = () => {
+    setShowModal(false);
+  };
   return (
     <div
       id="courses"
@@ -60,6 +66,7 @@ const SectioneCourses = () => {
                 </div>
               </div>
               <Btn
+                onclick={() => setShowModal(true)}
                 bgColor={"bg-[#00B125]"}
                 content={`${t("courses.logup-btn")}`}
                 textColor={"text-white"}
@@ -91,6 +98,8 @@ const SectioneCourses = () => {
           />
         </div>
       </div>
+      {showModal && <ModalRegister handleClose={handleCloseOverlay} />}
+      {showModal && <Overlay handleCloseOverlay={handleCloseOverlay} />}
     </div>
   );
 };
