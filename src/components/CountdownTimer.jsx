@@ -23,7 +23,6 @@ const CountdownTimer = ({ eventTime }) => {
       );
     }
   };
-  console.log(eventTime);
   return (
     <div>
       <Countdown date={eventTime} renderer={renderer} />

@@ -102,5 +102,16 @@
   "modal": {
     "title": "Đăng ký khóa học",
     "subTitle": "Đăng ký nhận thông tin về ưu đãi, sản phẩm mới và khuyến mãi"
+  },
+  "weather": {
+    "clearSky": "Trời quang đãng",
+    "fewClouds": "Mây ít",
+    "scatteredClouds": "Mây rải rác",
+    "brokenClouds": "Mây đen pha tạp",
+    "showerRain": "Mưa rào",
+    "rain": "Mưa",
+    "thunderstorm": "Dông bão",
+    "snow": "Tuyết",
+    "mist": "Sương mù"
   }
 }

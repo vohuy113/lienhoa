@@ -25,7 +25,6 @@ export const saveDataFromForm = (data) => {
     .then((result) => {
       if (result.status == "mail_sent") {
       } else {
-        console.log("fail");
       }
     })
     .catch((error) => {

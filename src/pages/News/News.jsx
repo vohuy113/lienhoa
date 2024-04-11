@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { data } from "../../data/Event";
-import Card from "../../components/Card";
+
 import Search from "../../components/Search";
 import { useTranslation } from "react-i18next";
 import { getNewsPerPage } from "../../services/news";
+import Card from "../../components/Card";
 const News = () => {
   const { t } = useTranslation();
   const [dataRender, setDataRender] = useState([]);
@@ -15,7 +16,6 @@ const News = () => {
     getDataNews();
     return () => {};
   }, []);
-  console.log(dataRender);
   return (
     <div className="pt-[94px] lg:px-20 md:px-9 px-4">
       <div className="flex justify-between flex-col-reverse md:flex-row items-start md:items-center">

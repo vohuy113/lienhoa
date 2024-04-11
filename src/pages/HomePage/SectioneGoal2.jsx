@@ -27,28 +27,28 @@ const SectioneGoal2 = () => {
               <h2 className="text-[24px] font-semibold text-left">
                 {t("goal2.title_2")}
               </h2>
-              <div class="block sm:flex flex-row gap-2">
-                <div class="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 py-4 px-8 basis-1/4 border-[1px] border-[#FFF]">
+              <div className="block sm:flex flex-row gap-2">
+                <div className="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 py-4 px-8 basis-1/4 border-[1px] border-[#FFF]">
                   {t("goal2.table_1")}
                 </div>
-                <div class="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 py-4 px-8 basis-1/4 border-[1px] border-[#FFF] flex items-center justify-center">
+                <div className="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 py-4 px-8 basis-1/4 border-[1px] border-[#FFF] flex items-center justify-center">
                   <span>140.000</span>
                   <span className="underline">đ</span>
                 </div>
-                <div class="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 p-2 basis-1/2 border-[1px] border-[#FFF] flex items-center justify-center">
+                <div className="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 p-2 basis-1/2 border-[1px] border-[#FFF] flex items-center justify-center">
                   <span> {t("goal2.table_2")}</span>
                   <span className="ml-2"> 06:00 - 18:00</span>
                 </div>
               </div>
-              <div class="block sm:flex flex-row gap-2">
-                <div class="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 py-4 px-8 basis-1/4 border-[1px] border-[#FFF]">
+              <div className="block sm:flex flex-row gap-2">
+                <div className="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 py-4 px-8 basis-1/4 border-[1px] border-[#FFF]">
                   {t("goal2.table_1")}
                 </div>
-                <div class="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 py-4 px-8 basis-1/4 border-[1px] border-[#FFF] flex items-center justify-center">
+                <div className="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 py-4 px-8 basis-1/4 border-[1px] border-[#FFF] flex items-center justify-center">
                   <span>140.000</span>
                   <span className="underline">đ</span>
                 </div>
-                <div class="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 p-2 basis-1/2 border-[1px] border-[#FFF] flex items-center justify-center">
+                <div className="text-[16px] font-semibold sm:font-normal mt-2 sm:mt-0 p-2 basis-1/2 border-[1px] border-[#FFF] flex items-center justify-center">
                   <span> {t("goal2.table_2")}</span>
                   <span className="ml-2"> 06:00 - 18:00</span>
                 </div>
