@@ -25,16 +25,16 @@ const Card = ({ type, title, subTitle, time, img }) => {
   };
   return (
     <div>
-      <img src={img} alt="News Image" class="w-full h-40 object-cover" />
-      <h3 class="text-lg lg:text-xl text-left lg:leading-[31px] font-semibold detail-news h-[62px] mb-1 mt-2 line-clamp-2">
+      <img src={img} alt="News Image" className="w-full h-40 object-cover" />
+      <h3 className="text-lg lg:text-xl text-left lg:leading-[31px] font-semibold detail-news h-[62px] mb-1 mt-2 line-clamp-2">
         {parse(truncateText(title, 2))}
       </h3>
-      <div class="text-black text-sm font-normal text-left h-[40px] overflow-hidden detail-news cardUI line-clamp-3">
+      <div className="text-black text-sm font-normal text-left h-[40px] overflow-hidden detail-news cardUI line-clamp-3">
         {parse(truncateText(subTitle, 2))}
       </div>
-      <div class="flex gap-2 py-3 w-full items-center">
+      <div className="flex gap-2 py-3 w-full items-center">
         <img src={calendar_ic} />
-        <h3 class="text-sm font-normal text-left text-[#B5B5B5] ">
+        <h3 className="text-sm font-normal text-left text-[#B5B5B5] ">
           {formatDate(time)}
         </h3>
       </div>

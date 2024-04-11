@@ -85,7 +85,6 @@ export const Weather = () => {
         return description;
     }
   }
-  console.log("Weather");
   return (
     <div className="flex items-center justify-between flex-col md:flex-row mt-12 md:mt-0">
       <div className="flex flex-col items-center justify-center">

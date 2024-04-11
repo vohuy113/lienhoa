@@ -27,10 +27,8 @@ const Header = () => {
       const currentScrollPos = window.pageYOffset;
       console.log(currentScrollPos);
       if (prevScrollPos > currentScrollPos) {
-        console.log("scroll up");
         setHeaderVisible(true);
       } else {
-        console.log("scroll down");
         setHeaderVisible(false);
       }
       setPrevScrollPos(currentScrollPos);
