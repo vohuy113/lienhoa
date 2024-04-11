@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const FooterInfo = () => {
   const { t } = useTranslation();
@@ -20,7 +21,7 @@ const FooterInfo = () => {
           <Link>{t("footer.book")}</Link>
         </li>
         <li>
-          <Link>FAQs</Link>
+          <Link>{t("footer.info_item4")}</Link>
         </li>
       </ul>
     </div>
