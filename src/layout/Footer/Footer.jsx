@@ -14,7 +14,7 @@ const Footer = () => {
         <FooterHeadquarter />
       </div>
       <div className="border-t text-white py-[30px]">
-        Copyright © 2023 3legant. All rights reserved
+        Copyright © 2023 Hue Gol Club. All rights reserved
       </div>
     </div>
   );
