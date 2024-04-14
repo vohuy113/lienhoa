@@ -31,7 +31,7 @@ const SectioneCourses = () => {
         <div className="basis-2/5 relative  inset-0 bg-gradient-to-b from-transparent to-black text-white">
           <img className="w-full h-full object-cover " src={course_img} />
           <div className="absolute bottom-[24px]  right-[16px] left-[16px] flex flex-col gap-4">
-            <h1 className="text-[28px]   lg:text-[42px] text-left font-semibold text-white mb-2">
+            <h1 className="text-[28px] uppercase  lg:text-[42px] text-left font-semibold text-white mb-2">
               {t("courses.title_2")}
             </h1>
             <p className="text-[12px] text-left">{t("courses.des_2")}</p>
