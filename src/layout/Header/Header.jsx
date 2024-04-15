@@ -25,10 +25,14 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      if (prevScrollPos > currentScrollPos) {
+      if (currentScrollPos == 0) {
         setHeaderVisible(true);
       } else {
-        setHeaderVisible(false);
+        if (prevScrollPos > currentScrollPos) {
+          setHeaderVisible(true);
+        } else {
+          setHeaderVisible(false);
+        }
       }
       setPrevScrollPos(currentScrollPos);
     };
@@ -56,7 +60,7 @@ const Header = () => {
       className={`z-20 fixed ${
         headerVisible
           ? "transition-transform duration-300 ease-in transform translate-y-0"
-          : "ttransition-transform duration-300 ease-out transform -translate-y-full"
+          : "transition-transform duration-300 ease-out transform -translate-y-full"
       } bg-white shadow-lg w-full flex justify-between items-center py-[19px] lg:px-20 px-4`}
     >
       <Logo />

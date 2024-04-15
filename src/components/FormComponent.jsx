@@ -24,7 +24,7 @@ const FormComponent = ({ title, subTitle, closeBtn, handleClose }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     saveDataFromForm(formData);
-    toast.success("🦄 Wow so easy!", {
+    toast.success("🦄 resgister success", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -38,7 +38,7 @@ const FormComponent = ({ title, subTitle, closeBtn, handleClose }) => {
   };
 
   return (
-    <div className="border bg-white border-black p-[50px] max-w-2xl w-full h-max mx-auto relative">
+    <div className="border bg-white border-black p-5 md:p-[50px] max-w-2xl w-full h-max mx-auto relative">
       {closeBtn && (
         <img
           src={closeBtn}
@@ -50,7 +50,6 @@ const FormComponent = ({ title, subTitle, closeBtn, handleClose }) => {
         {title}
       </h1>
       <h2 className="">{subTitle}</h2>
-      <ToastContainer />
       <form
         className="w-full h-full flex flex-col gap-6 mt-10"
         onSubmit={handleSubmit}
