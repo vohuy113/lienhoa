@@ -8,6 +8,8 @@ import Homepage from "./pages/HomePage/Homepage";
 import Events from "./pages/Events/Events";
 import News from "./pages/News/News";
 function App() {
+  const currentDateTime = process.env.REACT_APP_CURRENT_DATETIME;
+  console.log(currentDateTime);
   return (
     <div className="w-full">
       <Routes>
