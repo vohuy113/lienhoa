@@ -63,8 +63,12 @@
     "event": "Sự kiện",
     "title": "Kỷ niệm 10 năm thành lập Huế Golf",
     "des": "",
-    "time": "Thời gian diễn ra",
-    "timeto": "Sắp diễn ra"
+    "time": "Thời gian diễn ra:",
+    "timeto": "Sắp diễn ra",
+    "upcoming": "Sắp diễn ra",
+    "occurred": "Đã diễn ra",
+    "not_occurred": "Chưa diễn ra",
+    "see_more": "Xem thêm..."
   },
   "contact": {
     "contact": "Liên hệ",
