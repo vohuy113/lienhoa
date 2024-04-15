@@ -132,7 +132,7 @@ const SectionImage = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="w-full md:w-1/3">
+            <div className="mt-3 md:mt-0 w-full md:w-1/3">
               <iframe
                 width="100%"
                 height="100%"
@@ -144,7 +144,7 @@ const SectionImage = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="w-full md:w-1/3">
+            <div className="mt-3 md:mt-0 w-full md:w-1/3">
               <iframe
                 width="100%"
                 height="100%"
