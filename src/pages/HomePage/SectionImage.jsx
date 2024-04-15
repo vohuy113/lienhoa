@@ -5,7 +5,7 @@ import img2 from "../../assets/SectionVideoImage/2.jpg";
 import img3 from "../../assets/SectionVideoImage/TMS_0194.jpg";
 import img4 from "../../assets/SectionVideoImage/Rectangle4.png";
 import img5 from "../../assets/SectionVideoImage/TMS_0073.jpg";
-import img6 from "../../assets/SectionVideoImage/TMS_0176.jpg";
+import img6 from "../../assets/SectionVideoImage/Rectangle7.jpg";
 import { useTranslation } from "react-i18next";
 
 const SectionImage = () => {
