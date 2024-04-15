@@ -1,4 +1,5 @@
 // import { toast } from 'react-toastify';
+import { API_URL } from "./api";
 import "react-toastify/dist/ReactToastify.css";
 export const saveDataFromForm = (data) => {
   const myHeaders = new Headers();
@@ -18,7 +19,7 @@ export const saveDataFromForm = (data) => {
   };
 
   fetch(
-    `http://104.43.106.2/wp-json/contact-form-7/v1/contact-forms/175/feedback`,
+    `${API_URL}/wp-json/contact-form-7/v1/contact-forms/9/feedback`,
     requestOptions
   )
     .then((response) => response.json())

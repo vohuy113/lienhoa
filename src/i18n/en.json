@@ -63,8 +63,12 @@
     "event": "Events",
     "title": "Hue Golf's 10th Anniversary Celebration",
     "des": "",
-    "time": "Time of the Event",
-    "timeto": "Upcoming"
+    "time": "Time of the Event:",
+    "timeto": "Upcoming",
+    "upcoming": "Upcoming",
+    "occurred": "Has occurred",
+    "not_occurred": "Has not occurred",
+    "see_more": "See more..."
   },
   "contact": {
     "contact": "Contact Us",
