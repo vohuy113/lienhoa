@@ -20,7 +20,7 @@ const FooterInfo = () => {
           <Link>{t("footer.book")}</Link>
         </li>
         <li>
-          <Link>{t("footer.info_item4")}</Link>
+          <Link>FAQs</Link>
         </li>
       </ul>
     </div>
