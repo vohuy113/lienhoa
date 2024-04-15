@@ -78,84 +78,18 @@ const SectionImage = () => {
         </div>
       ) : (
         // {/* sssss */}
-        <div className="lg:mt-6 mt-3  flex flex-col lg:gap-6 md:gap-4 gap-3">
-          <div className="grid grid-cols-1 lg:grid-cols-3  justify-between object-cover overflow-hidden">
-            <div className="col-span-2 bg-slate-500 lg:mb-6 md:mb-4 mb-3">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/5tlQ_2fvlTo?si=n-ClPAa-EqTKbqvU"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="h-full justify-between  col-span-1 flex md:flex-col w-full  lg:gap-6 md:gap-4 gap-3">
-              <div className="w-full h-full overflow-hidden ">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/5tlQ_2fvlTo?si=n-ClPAa-EqTKbqvU"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="w-full h-full overflow-hidden ">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/5tlQ_2fvlTo?si=n-ClPAa-EqTKbqvU"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div className=" block md:flex w-full lg:gap-6 md:gap-4 gap-3">
-            <div className="w-full md:w-1/3 h-full">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/5tlQ_2fvlTo?si=n-ClPAa-EqTKbqvU"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="mt-3 md:mt-0 w-full md:w-1/3">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/5tlQ_2fvlTo?si=n-ClPAa-EqTKbqvU"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="mt-3 md:mt-0 w-full md:w-1/3">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/5tlQ_2fvlTo?si=n-ClPAa-EqTKbqvU"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
+        <div className="lg:mt-6 mt-3 w-full h-[256px] md:h-[424px] lg:h-[484px] xl:h-[594px] 2xl:h-[624px]">
+          <div className="flex items-center bg-slate-500 w-full h-full lg:mb-6 md:mb-4 mb-3">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/5tlQ_2fvlTo?si=n-ClPAa-EqTKbqvU"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       )}
