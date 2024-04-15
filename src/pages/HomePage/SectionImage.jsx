@@ -25,8 +25,8 @@ const SectionImage = () => {
       <ToggleSwitch onToggle={handleRenderData} />
       {isImage ? (
         <div className="lg:mt-6 mt-3  flex flex-col lg:gap-6 md:gap-4 gap-3">
-          <div className="grid grid-cols-1 lg:grid-cols-3 justify-center  overflow-hidden">
-            <div className="col-span-2 bg-slate-500 lg:mb-6 md:mb-4 mb-3">
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 justify-center  overflow-hidden">
+            <div className="col-span-2 bg-slate-500">
               {
                 <img
                   src={img2}
@@ -35,15 +35,15 @@ const SectionImage = () => {
                 />
               }
             </div>
-            <div className="h-full justify-between  col-span-1 flex md:flex-col w-full  lg:gap-6 md:gap-4 gap-3">
-              <div className="w-full h-full overflow-hidden ">
+            <div className="h-full justify-between col-span-1 flex md:flex-col w-full  lg:gap-6 md:gap-4 gap-3">
+              <div className="w-full h-full overflow-hidden  ">
                 <img
                   src={img4}
                   alt="image 2"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover lg:mt-0 md:mt-4 mt-3"
                 />
               </div>
-              <div className="w-full h-full overflow-hidden ">
+              <div className="w-full h-full overflow-hidden mt-3 lg:mt-0 ">
                 <img
                   src={img5}
                   alt="image 3"
