@@ -12,7 +12,16 @@ const DrawerMobile = ({ showMenu, handleCloseDrawer }) => {
     enter: { transform: "translateX(0%)" },
     leave: { transform: "translateX(-100%)" },
   });
-
+  const handleMenuClick = (sectionId) => {
+    handleCloseDrawer();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <>
       {transitions(
@@ -32,25 +41,25 @@ const DrawerMobile = ({ showMenu, handleCloseDrawer }) => {
               <ul className="mt-16 w-full flex flex-col gap-2 text-base items-start">
                 <li
                   className="p-4 border-b w-full text-start"
-                  onClick={handleCloseDrawer}
+                  onClick={() => handleMenuClick("home")}
                 >
                   <Link to={"/"}>{t("header.home")}</Link>
                 </li>
                 <li
                   className="p-4 border-b w-full text-start"
-                  onClick={handleCloseDrawer}
+                  onClick={() => handleMenuClick("mission")}
                 >
                   <Link to={"/home#mission"}>{t("header.introduce")}</Link>
                 </li>
                 <li
                   className="p-4 border-b w-full text-start"
-                  onClick={handleCloseDrawer}
+                  onClick={() => handleMenuClick("courses")}
                 >
                   <Link to={"/home#courses"}>{t("header.training")}</Link>
                 </li>
                 <li
                   className="p-4 border-b w-full text-start"
-                  onClick={handleCloseDrawer}
+                  onClick={() => handleMenuClick("goal2")}
                 >
                   <Link to={"/home#goal2"}>{t("header.ground")}</Link>
                 </li>

@@ -11,7 +11,7 @@ import CourseItem from "../../components/CourseItem";
 import { useTranslation } from "react-i18next";
 import ModalRegister from "../../components/ModalRegister";
 import Overlay from "../../components/Overlay";
-
+import { ToastContainer } from "react-toastify";
 const SectioneCourses = () => {
   const [showModal, setShowModal] = useState(false);
   const { t } = useTranslation();
@@ -100,6 +100,7 @@ const SectioneCourses = () => {
       </div>
       {showModal && <ModalRegister handleClose={handleCloseOverlay} />}
       {showModal && <Overlay handleCloseOverlay={handleCloseOverlay} />}
+      <ToastContainer />
     </div>
   );
 };
