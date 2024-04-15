@@ -24,9 +24,9 @@ const SectionImage = () => {
       </h1>
       <ToggleSwitch onToggle={handleRenderData} />
       {isImage ? (
-        <div className="lg:mt-6 mt-3 w-full h-full flex flex-col lg:gap-6 md:gap-4 gap-3">
-          <div className="flex flex-col md:flex-row w-full lg:gap-6 md:gap-4 gap-3 justify-between object-cover overflow-hidden">
-            <div className="flex-1 bg-slate-500">
+        <div className="lg:mt-6 mt-3  flex flex-col lg:gap-6 md:gap-4 gap-3">
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 md:gap-4 gap-3 justify-center  overflow-hidden">
+            <div className="col-span-2 bg-slate-500">
               {
                 <img
                   src={img2}
@@ -35,15 +35,15 @@ const SectionImage = () => {
                 />
               }
             </div>
-            <div className="h-full justify-between flex md:flex-col w-full md:w-[calc(100%/3-16px)] lg:gap-6 md:gap-4 gap-3">
-              <div className="w-1/2 md:w-full h-full overflow-hidden ">
+            <div className="h-full justify-between  col-span-2 flex md:flex-col w-full  lg:gap-6 md:gap-4 gap-3">
+              <div className="w-full h-full overflow-hidden ">
                 <img
                   src={img4}
                   alt="image 2"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="w-1/2 md:w-full h-full overflow-hidden ">
+              <div className="w-full h-full overflow-hidden ">
                 <img
                   src={img5}
                   alt="image 3"
@@ -78,9 +78,9 @@ const SectionImage = () => {
         </div>
       ) : (
         // {/* sssss */}
-        <div className="lg:mt-6 mt-3 w-full h-full flex flex-col lg:gap-6 md:gap-4 gap-3">
-          <div className="flex flex-col md:flex-row w-full lg:gap-6 md:gap-4 gap-3 justify-between object-cover overflow-hidden">
-            <div className="flex-1 min-h-fit bg-slate-500">
+        <div className="lg:mt-6 mt-3  flex flex-col lg:gap-6 md:gap-4 gap-3">
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 md:gap-4 gap-3 justify-between object-cover overflow-hidden">
+            <div className="col-span-2 bg-slate-500">
               <iframe
                 width="100%"
                 height="100%"
@@ -92,8 +92,8 @@ const SectionImage = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="h-full justify-between flex md:flex-col w-full md:w-[calc(100%/3-16px)] lg:gap-6 md:gap-4 gap-3">
-              <div className="w-1/2 md:w-full min-h-full overflow-hidden ">
+            <div className="h-full justify-between  col-span-2 flex md:flex-col w-full  lg:gap-6 md:gap-4 gap-3">
+              <div className="w-full h-full overflow-hidden ">
                 <iframe
                   width="100%"
                   height="100%"
@@ -105,7 +105,7 @@ const SectionImage = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="w-1/2 md:w-full h-auto overflow-hidden ">
+              <div className="w-full h-full overflow-hidden ">
                 <iframe
                   width="100%"
                   height="100%"
@@ -119,8 +119,8 @@ const SectionImage = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full lg:gap-6 md:gap-4 gap-3 h-1/2">
-            <div className="w-1/3">
+          <div className=" block md:flex w-full lg:gap-6 md:gap-4 gap-3">
+            <div className="w-full md:w-1/3 h-full">
               <iframe
                 width="100%"
                 height="100%"
@@ -132,7 +132,7 @@ const SectionImage = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="w-1/3">
+            <div className="w-full md:w-1/3">
               <iframe
                 width="100%"
                 height="100%"
@@ -144,7 +144,7 @@ const SectionImage = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="w-1/3">
+            <div className="w-full md:w-1/3">
               <iframe
                 width="100%"
                 height="100%"
