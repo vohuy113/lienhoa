@@ -26,8 +26,9 @@ const Events = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {dataRender &&
-          dataRender.map((item, key) => (
+          dataRender.map((item, index) => (
             <Card
+              key={item?.id}
               title={item.name || item.title.rendered}
               subTitle={item.description || item.content.rendered}
               time={item.time || item.date}
