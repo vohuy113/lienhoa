@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
   return {
     define: {
       "process.env": process.env,
+      __BUILD_DATE__: JSON.stringify(new Date().toLocaleString()),
     },
     plugins: [react()],
   };

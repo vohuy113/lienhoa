@@ -23,7 +23,6 @@ const SectionImage = () => {
       setStateBtn(t("section-image.show_less"));
     } else setStateBtn(t("section-image.show_more"));
   }, [isShowMore, t]);
-
   useEffect(() => {
     const getImgGallary = async () => {
       let dataImg = await getImageGallary();
@@ -31,7 +30,6 @@ const SectionImage = () => {
     };
     getImgGallary();
   }, []);
-  console.log(imgData);
   return (
     <div
       id="section-image"
