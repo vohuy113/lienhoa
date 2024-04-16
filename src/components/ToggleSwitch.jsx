@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const ToggleSwitch = ({ onToggle }) => {
-  const [isToggled, setIsToggled] = useState(false);
+  const [isToggled, setIsToggled] = useState(true);
   const handleChange = () => {
     setIsToggled(!isToggled);
     onToggle();

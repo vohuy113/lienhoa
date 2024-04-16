@@ -101,7 +101,9 @@
   "section-image": {
     "title": "HÌNH ẢNH & VIDEO",
     "image": "Hình ảnh",
-    "video": "Video"
+    "video": "Video",
+    "show_more": "Xêm Thêm",
+    "show_less": "Ẩn bớt"
   },
   "modal": {
     "title": "Đăng ký khóa học",
