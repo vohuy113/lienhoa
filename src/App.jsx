@@ -8,8 +8,7 @@ import Homepage from "./pages/HomePage/Homepage";
 import Events from "./pages/Events/Events";
 import News from "./pages/News/News";
 function App() {
-  const currentDateTime = process.env.REACT_APP_CURRENT_DATETIME;
-  console.log(currentDateTime);
+  console.log("Ứng dụng build vào:", { __BUILD_DATE__ });
   return (
     <div className="w-full">
       <Routes>

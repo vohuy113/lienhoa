@@ -14,11 +14,9 @@ const CardEvent = ({ title, desc, timeEvent }) => {
   const differenceInDays = differenceInTime / (1000 * 3600 * 24);
   const [stateEvent, setStateEvent] = useState();
   const [styleState, setStyleState] = useState("text-white");
-  const [isShowMore, setIsShowMore] = useState(true);
   useEffect(() => {
     if (differenceInDays < 0) {
       setStateEvent("event.occurred");
-      setIsShowMore(false);
     } else if (differenceInDays < 10) {
       setStateEvent("event.upcoming");
       setStyleState("text-red-600");
@@ -63,9 +61,6 @@ const CardEvent = ({ title, desc, timeEvent }) => {
       <h2 className="text-xl text-start text-white line-clamp-3">
         {parse(truncateText(desc, 3))}
       </h2>
-      {isShowMore && (
-        <div className="text-white lg:my-4 my-2">{t("event.see_more")}</div>
-      )}
       <div className="flex gap-2">
         <h2 className="text-white">{t("event.time")}</h2>
         <h2 className="text-white">{formatDate(timeEvent)}</h2>

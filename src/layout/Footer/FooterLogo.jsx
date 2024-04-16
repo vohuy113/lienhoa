@@ -18,7 +18,7 @@ const FooterLogo = () => {
         <Link to={"https://www.youtube.com/@HUEGOLFCLUB"}>
           <img className="w-6 h-6" src={youtube_ic} />
         </Link>
-        <Link to={"https://www.youtube.com/@HUEGOLFCLUB"}>
+        <Link to={"https://www.tiktok.com/@huegolfclup.01"}>
           <img className="w-6 h-6" src={tiktok_ic} />
         </Link>
       </div>

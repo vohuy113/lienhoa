@@ -1,1 +1,1 @@
-export const API_URL = "http://104.43.106.2:10000";
+export const API_URL = import.meta.env.VITE_API_URL;

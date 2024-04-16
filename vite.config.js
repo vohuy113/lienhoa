@@ -7,8 +7,8 @@ dotenv.config();
 export default defineConfig(({ mode }) => {
   return {
     define: {
+      __BUILD_DATE__: new Date(),
       "process.env": process.env,
-      __BUILD_DATE__: JSON.stringify(new Date().toLocaleString()),
     },
     plugins: [react()],
   };

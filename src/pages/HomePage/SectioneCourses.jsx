@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import course_img from "../../assets/SectionCourses/course-img.png";
+import course_img from "../../assets/SectionCourses/course_bg.png";
 import course_svg from "../../assets/SectionCourses/star_half_24px.svg";
 import course_svg1 from "../../assets/SectionCourses/star_purple500_24px.svg";
 import course_svg2 from "../../assets/SectionCourses/ticket 1.svg";
@@ -30,6 +30,7 @@ const SectioneCourses = () => {
       <div className="block xl:flex md:flex-row gap-10">
         <div className="basis-2/5 relative  inset-0 bg-gradient-to-b from-transparent to-black text-white">
           <img className="w-full h-full object-cover " src={course_img} />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
           <div className="absolute bottom-[24px]  right-[16px] left-[16px] flex flex-col gap-4">
             <h1 className="text-[28px] uppercase  lg:text-[42px] text-left font-semibold text-white mb-2">
               {t("courses.title_2")}
