@@ -101,7 +101,9 @@
   "section-image": {
     "title": "IMAGES & VIDEOS",
     "image": "Images",
-    "video": "Videos"
+    "video": "Videos",
+    "show_more": "Show more",
+    "show_less": "Show less"
   },
   "modal": {
     "title": "Enroll in a Course",

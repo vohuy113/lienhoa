@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ToggleSwitch from "../../components/ToggleSwitch";
 import img1 from "../../assets/SectionVideoImage/TMS_0226.jpg";
 import img2 from "../../assets/SectionVideoImage/2.jpg";
@@ -7,13 +7,31 @@ import img4 from "../../assets/SectionVideoImage/Rectangle4.png";
 import img5 from "../../assets/SectionVideoImage/TMS_0073.jpg";
 import img6 from "../../assets/SectionVideoImage/Rectangle7.jpg";
 import { useTranslation } from "react-i18next";
+import { getImageGallary } from "../../services/getImageGallary";
 
 const SectionImage = () => {
   const { t } = useTranslation();
-  const [isImage, setIsImage] = useState(false);
+  const [isImage, setIsImage] = useState(true);
+  const [isShowMore, setIsShowMore] = useState(false);
+  const [imgData, setImgData] = useState([]);
   const handleRenderData = () => {
     setIsImage((pre) => !pre);
   };
+  const [stateBtn, setStateBtn] = useState(t("section-image.show_more"));
+  useEffect(() => {
+    if (isShowMore) {
+      setStateBtn(t("section-image.show_less"));
+    } else setStateBtn(t("section-image.show_more"));
+  }, [isShowMore, t]);
+
+  useEffect(() => {
+    const getImgGallary = async () => {
+      let dataImg = await getImageGallary();
+      setImgData(dataImg);
+    };
+    getImgGallary();
+  }, []);
+  console.log(imgData);
   return (
     <div
       id="section-image"
@@ -75,6 +93,27 @@ const SectionImage = () => {
               />
             </div>
           </div>
+
+          {isShowMore && (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 min-h-[600px]">
+              {imgData &&
+                imgData.map((item, index) => (
+                  <img
+                    src={item}
+                    key={index}
+                    className=" last:col-span-2 md:last:col-span-1 w-full h-full object-cover"
+                  />
+                ))}
+            </div>
+          )}
+          <button
+            className="bg-primary text-white w-max py-2 px-4 mx-auto"
+            onClick={() => {
+              setIsShowMore((prev) => !prev);
+            }}
+          >
+            {stateBtn}
+          </button>
         </div>
       ) : (
         // {/* sssss */}
